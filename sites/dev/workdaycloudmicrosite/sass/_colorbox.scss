@@ -1,0 +1,84 @@
+/* colorbox core styles */
+#colorbox, #cboxOverlay, #cboxWrapper {
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0; 
+}
+
+#cboxOverlay {
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+
+#cboxMiddleLeft, #cboxBottomLeft { clear: left; }
+
+#cboxContent { position: relative; }
+
+#cboxLoadedContent { overflow: auto; }
+
+#cboxTitle { margin: 0; }
+
+#cboxLoadingOverlay, #cboxLoadingGraphic {
+  height: 100%; left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow { cursor: pointer; }
+
+.cboxPhoto {
+  border: 0;
+  display: block;
+  float: left;
+  margin: auto; 
+}
+
+.cboxIframe {
+  border: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/* colorbox user styles */
+#colorbox, #cboxOverlay, #cboxWrapper { z-index: 999999; }
+
+#cboxOverlay { background-color: #000; }
+
+#cboxClose {
+  position: absolute;
+  top: 0 !important;right: 0 !important;
+  display: block; background: url(../images/lightboxClose.png) no-repeat 0 0 !important;
+  width: 31px !important;
+  height: 31px !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-indent: 100%;
+}
+
+#cboxLoadedContent {
+  background: #000;
+  background: rgba(0, 0, 0, 0.75) url(../images/backgroundColorboxSpinner.gif) no-repeat center center;
+  border-color: #000;
+  border: 10px solid rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+
+#cboxContent { padding: 20px; }
+
+#cboxTitle {
+  background: #000;
+  background: rgba(0, 0, 0, 0.50);
+  bottom: 0; color: #fff;
+  left: 0;
+  position: absolute;
+  line-height: 1;
+  text-align: center;
+  text-indent: 10px;
+  margin: 0 30px 30px;
+}
+
+#cboxTitle div { padding: 10px; }

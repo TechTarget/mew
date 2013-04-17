@@ -1,0 +1,192 @@
+!!! 5
+html(lang='en', dir='ltr')
+  head
+    meta(name='pageStart', content='1359057078694')
+    title Embedded Version of Microsite
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    link#stylesheetGlobal(rel='stylesheet', type='text/css', href='http://media.ttgtmedia.com/rms/ux/css/global.css', media='screen')
+    link#stylesheetSiteSpecific(rel='stylesheet', type='text/css', href='http://media.ttgtmedia.com/rms/ux/css/searchsqlserver_new.css', media='screen')
+    script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
+    // this needs to be here in order to avoid uncaught reference errors in console
+    script(type='text/javascript')
+      var SITE_name = '';
+      var SITE_v5sid = '';
+      var SITE_hostName = 'techtarget';
+      var ENV_clicktrackHost = 'http://clicktrack.techtarget.com';
+      var ENV_mediaHost = 'http://cdn.ttgtmedia.com/rms/ux';
+      var zone = 'HOME';
+      var taxNameWithOutSpecialChars='Home';
+  body
+    #header
+      #universalBar
+        #universalBarCompress
+          #seoKeyword SEO SPAM
+          #membershipLinks
+            ul
+              li#mlLogin: a(href='#') Login
+              li#mlRegister: a(href='http://users.techtarget.com/registration/searchsqlserver/Register.page') Become a member
+              li#mlRss: a(href='/rss')
+                  span
+                  | RSS
+              li#mlNetwork: a.ttNetworkLinks(href='/?vgnextfmt=portfolio') Part of the TechTarget network
+      #headerLogo
+        #headerLogoCompress
+          a(href='/') SearchSQLServer.com
+          span#headerTechtargetLogo
+      #headerNavigation
+        #headerNavigationCompress
+          .megaMenu
+            ul
+              li.mmNavItem: a.mmNavLink(href='http://searchsqlserver.techtarget.com/news') News
+              li.mmNavItem: a.mmNavLink(href='http://searchsqlserver.techtarget.com/ebooks')
+                  | Premium
+                  br
+                  | E-Books &amp; E-Zines
+              li.mmNavItem: a.mmNavLink(href='http://searchsqlserver.techtarget.com/resources')
+                  | SQL Server
+                  br
+                  | Topics
+              li.mmNavItem: a.mmNavLink(href='http://searchsqlserver.techtarget.com/SQL-Server-tutorials') Tutorials
+              li.mmNavItem: a.mmNavLink(href='http://searchsqlserver.techtarget.com/tips')
+                  | Expert
+                  br
+                  | Advice
+              li.mmNavItem: a.mmNavLink(href='http://searchsqlserver.bitpipe.com')
+                  | White
+                  br
+                  | Papers
+              li.mmNavItem: a.mmNavLink(href='http://itknowledgeexchange.techtarget.com/itblogs/') Blogs
+          #headerNavigationSearch.navigationSearch
+            form#headerNavigationSearchForm(action='/search/query', method='get')
+              fieldset
+                label.navigationSearchLabel(for='headerNavigationSearchTextbox') Search this site
+                input(type='hidden', name='start', value='0')
+                input(type='hidden', name='filter', value='1')
+                input#headerNavigationSearchTextbox.navigationSearchBox(type='text', name='q')
+                input#headerNavigationSearchSubmit.navigationSearchSubmitButton(type='submit', value='Search')
+    #content
+      #contentCompress
+        // BEGIN: embedded microsite
+        #micrositeAdvertisement
+          h3 Advertisement
+          #micrositeClose
+            a(href='http://searchdatamanagement.techtarget.com') Close
+        // END: embedded microsite
+        include main
+    #footer
+      #footerNavigation
+        #footerNavigationCompress
+          .megaMenu
+            ul
+              li.mmNavItem: a.mmNavLink(href='http://searchsqlserver.techtarget.com/news') News
+              li.mmNavItem: a.mmNavLink(href='http://searchsqlserver.techtarget.com/ebooks')
+                  | Premium
+                  br
+                  | E-Books &amp; E-Zines
+              li.mmNavItem: a.mmNavLink(href='http://searchsqlserver.techtarget.com/resources')
+                  | SQL Server
+                  br
+                  | Topics
+              li.mmNavItem: a.mmNavLink(href='http://searchsqlserver.techtarget.com/SQL-Server-tutorials') Tutorials
+              li.mmNavItem: a.mmNavLink(href='http://searchsqlserver.techtarget.com/tips')
+                  | Expert
+                  br
+                  | Advice
+              li.mmNavItem: a.mmNavLink(href='http://searchsqlserver.bitpipe.com')
+                  | White
+                  br
+                  | Papers
+              li.mmNavItem: a.mmNavLink(href='http://itknowledgeexchange.techtarget.com/itblogs/') Blogs
+          #footerNavigationSearch.navigationSearch
+            form#footerNavigationSearchForm(action='/search/query', method='get')
+              fieldset
+                label.navigationSearchLabel(for='footerNavigationSearchTextbox') Search this site
+                input(type='hidden', name='start', value='0')
+                input(type='hidden', name='filter', value='1')
+                input#footerNavigationSearchTextbox.navigationSearchBox(type='text', name='q')
+                input#footerNavigationSearchSubmit.navigationSearchSubmitButton(type='submit', value='Search')
+      #footerCompress
+        #relatedSites
+          h5 More from Related TechTarget Sites
+          ul#relatedSitesNav.listTypeTab
+            li: a(href='#rsh-tab0') Business Analytics
+            li: a(href='#rsh-tab1') Data Center
+            li: a(href='#rsh-tab2') Data Management
+          ul#relatedSitesHeadlines.listTypeTabContent
+            li#rsh-tab0
+              .rshLogo
+                a.searchbusinessanalytics(href='http://searchbusinessanalytics.techtarget.com') Business Analytics
+              ul.rshCols
+                li
+                  h6
+                    a(href='http://searchbusinessanalytics.techtarget.com/news/2240169915/Mobile-BI-apps-move-up-the-corporate-priority-list') Mobile BI apps move up the corporate priority list
+                  p
+                    | The growing use of tablet PCs and smartphones is spurring demand for mobile business intelligence capabilities from end users. Are you ready?
+                li
+                  h6
+                    a(href='http://searchbusinessanalytics.techtarget.com/feature/BI-competency-center-brings-coordination-but-with-complications') BI competency center brings coordination -- but with complications
+                  p
+                    | Managed effectively, business intelligence competency centers help align BI projects with corporate goals. But they also can become BI bottlenecks.
+                li
+                  h6
+                    a(href='http://searchbusinessanalytics.techtarget.com/feature/Survey-reveals-growing-interest-in-cloud-BI-and-analytics') Survey reveals growing interest in cloud BI and analytics
+                  p
+                    | TechTarget's recent 2012 Cloud Pulse survey suggests cloud BI and analytics are edging closer to mainstream adoption.
+            li#rsh-tab1
+              .rshLogo
+                a.searchdatacenter(href='http://searchdatacenter.techtarget.com') Data Center
+              ul.rshCols
+                li
+                  h6
+                    a(href='http://searchdatacenter.techtarget.com/news/2240169972/Two-data-center-hosting-companies-one-building-and-Hurricane-Sandy') Two data center hosting companies, one building and Hurricane Sandy
+                  p
+                    | Updated: Two data center hosting companies make their home in one building in Manhattan, which flooded Sunday.
+                li
+                  h6
+                    a(href='http://searchdatacenter.techtarget.com/tip/FAQ-Make-the-most-of-VM-resources-with-strategic-allocation') FAQ: Make the most of VM resources with strategic allocation
+                  p
+                    | Optimizing the allocation of VM resources will help make the most of data center virtualization.
+                li
+                  h6
+                    a(href='http://searchdatacenter.techtarget.com/quiz/How-much-do-you-know-about-big-data-infrastructure') How much do you know about 'big data' infrastructure?
+                  p
+                    | Take this quiz to see if your data center's 'big data' infrastructure will hold up.
+            li#rsh-tab2
+              .rshLogo
+                a.searchdatamanagement(href='http://searchdatamanagement.techtarget.com') Data Management
+              ul.rshCols
+                li
+                  h6
+                    a(href='http://searchdatamanagement.techtarget.com/news/2240169275/IBM-executives-customers-share-big-data-tips-at-Information-on-Demand') IBM executives, customers share 'big data' tips at Information on Demand
+                  p
+                    | An IBM VP and a user from Sprint took to the stage at the vendor's Information on Demand conference to offer advice on how to make sense of big data.
+                li
+                  h6
+                    a(href='http://searchdatamanagement.techtarget.com/news/2240165598/Zornes-connects-the-dots-between-big-data-and-master-data-management') Zornes connects the dots between big data and master data management
+                  p
+                    | Consultant Aaron Zornes believes that MDM and big data were made for one another.
+                li
+                  h6
+                    a(href='http://searchdatamanagement.techtarget.com/news/2240165242/IT-pros-reveal-the-benefits-drawbacks-of-data-virtualization-software') IT pros reveal benefits, drawbacks of data virtualization software
+                  p
+                    | Attendees at Composite Software's Data Virtualization Day conference had plenty of advice for companies considering a data virtualization project.
+          span#footerTechtargetLogo
+      #footerMiscLinks
+        #footerMiscLinksCompress
+          #footerCopyright
+            | All Rights Reserved,
+            a(href='/about/copyright') Copyright 2005 - 2013
+            | , TechTarget
+          ul
+            li: a(href='/about') About Us
+            li: a(href='/about/contact') Contact Us
+            li: a(href='/about/index') Site Index
+            li: a(href='http://www.techtarget.com/html/privacy_policy.html') Privacy policy
+            li: a(href='/about/advertising') Advertisers
+            li: a(href='/about/partners') Business partners
+            li: a(href='/events') Events
+            li: a(href='http://www.techtarget.com/mediakit/') Media kit
+            li: a(href='http://www.techtarget.com/') TechTarget Corporate site
+            li: a(href='http://reprints.ygsgroup.com/m/techtarget') Reprints
+            li: a(href='/sitemap') Site map
+    script(type='text/javascript', src='http://media.ttgtmedia.com/rms/ux/javascript/ss-combined.min.js')

@@ -1,0 +1,53 @@
+{
+
+  "info": {
+    "genericMessage": "%s",
+    "countTotalSites": "%d sites in total:",
+    "countActiveSites": "%d active sites:",
+    "countRetiredSites": "%d retired sites:",
+    "buildingSiteStart": "now building site assets for %s",
+    "propertyUpdated": "the %s property has been updated",
+    "cdnPurgeStart": "purging the following files on CDN:\n",
+    "cdnPurgeEnd": "CDN purge complete\n",
+    "siteCreated": "%s has been created",
+    "siteRetired": " has been retired",
+    "ftpFinished": "FTP session finished",
+    "ftpStarted": "FTP session started on %s",
+    "emailSending": "emailing %s notification",
+    "emailSuccess": "email sent successfully:",
+    "creatingBuildDirectory": "creating build directory for %s",
+    "creatingRemoteDirectory": "creating %s directory",
+    "releasingSite": "releasing %s to remote server"
+  },
+
+  "error": {
+    "genericError": "%s",
+    "ftpErrorVpn": "could not connect to %s \n make sure you are on the TTGT network or VPN",
+    "argumentsMissing": "arguments for %s missing",
+    "notValidProperty": "%s is not a valid property",
+    "needSitename": "please enter a name for the new microsite",
+    "dirNotBuilt": "the %s build directory hasn't been created; use build method first",
+    "dirAlreadyExists": "that directory already exists, choose another",
+    "siteAlreadyExists": "a microsite by that name already exists, try another name",
+    "siteDoesNotExist": "there is no record of a microsite named %s",
+    "noEnvSpecified": "specify which environment you want to release to.\n please use the -e flag to specify an environment",
+    "invalidEnvSpecified": "environment must be eng, qa or prod",
+    "cdnPurgeNoUrls": "there are no files built for %s",
+    "siteAlreadyRetired": "%s has already been retired",
+    "noTypeSites": "there are no %s sites",
+    "emailFail": "something went wrong so the email was not sent\n%s",
+    "noReleaseNotes": "please include release notes via the -m flag",
+    "invalidAssetTypeSpecified": "%s invalid asset types\n assets must be either 'javascript', 'css' and/or 'images' separated by commas",
+    "missingSiteName": "please include the name of the site you want to %s",
+    "ftpError": "there was a problem starting the FTP session"
+  },
+
+  "warn": {
+    "remoteDirAlreadyExists": "%s directory already exists"
+  },
+
+  "ask": {
+    "why": "why would you want to do that?"
+  }
+
+}

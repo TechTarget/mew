@@ -1,0 +1,20 @@
+/* layout starter */
+#micrositeContainer { background-color: #efefef; }
+#micrositeHeader {
+  border: 3px dashed red;
+  padding: 10px;
+}
+#micrositeHeaderNavigation { border: 3px dashed orange; }
+#micrositeContentColumnFull {
+  border: 3px dashed purple;
+  min-height: 50px;
+}
+#micrositeContentColumnLeft {
+  border: 3px dashed blue;
+  min-height: 100px;
+}
+#micrositeContentColumnRight {
+  border: 3px dashed CornflowerBlue;
+  min-height: 100px;
+}
+#micrositeFooter { border: 3px dashed green; }

@@ -1,0 +1,30 @@
+extends layoutEmbedded
+
+block content
+  #micrositeContainer
+    #micrositeContainerInner
+      #micrositeContainerCompress
+        #micrositeHeader
+          #micrositeHeaderBanner
+        #micrositeContent
+          #micrositeContentColumnFull
+
+            // BEGIN: featured video component
+            include featuredVideo
+
+          #micrositeContentColumnLeft
+
+            // BEGIN: custom splash
+            .customSplash
+              h2 Introducing the Ultrabook. Laptop when you need it. Tablet when you want it.
+              p
+                | Transform your experience by flipping, sliding or swiveling your device to go from laptop to tablet. Its ultra sleek, lightweight form makes Ultrabook™ the perfect device when you’re on the go.
+                a.buttonLearnMore(href='replaceMe') Learn More
+
+             // BEGIN: content tabs component
+            include contentTabs
+
+          #micrositeContentColumnRight
+
+            // BEGIN: placeholder image
+            img(src='images/placeholder.png', width='300', height='797')

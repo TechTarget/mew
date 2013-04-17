@@ -1,0 +1,23 @@
+- var tabs = ['Powerful Integration', 'Testing & QA', 'Virtualize Service Apps', 'Operational Efficiency', 'Multi-Platform Agility', 'Upcoming Events'], graphicSize = '80x100', intoGraphicSize = '120x120';
+
+.contentTabs
+  .contentTabsNav
+      ul
+        for tab in tabs
+          li: a(href='#') #{tab}
+  .contentTabsPanelCollection
+    each tab, index in tabs
+      .contentTabsPanel
+        .contentTabsPanelContent.oneColList
+          .contentTabsPanelIntro
+            h3 Panel for tab "#{tab}" (#{index+1} of #{tabs.length} panels)
+            p
+              img.contentTabsPanelIntroGraphic(data-src='example.com/#{intoGraphicSize}/mo', alt='')
+              @Html.Ipsum.p(1, 8)
+          ul
+            - for (var i = 0; i < 10; ++i) {
+              li
+                h4: a(href='replaceMe') @Html.Ipsum.h4(5)
+                p @Html.Ipsum.p(1, 8)
+                p: a.viewNow(href='replaceMe') View Now
+            - }

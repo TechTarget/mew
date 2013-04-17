@@ -1,0 +1,14 @@
+include data
+!!! 5
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title #{site.name}
+    link(rel='stylesheet', href='css/style.css', type='text/css', media='screen')
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+    script(src='javascript/script.js')
+    script
+      var SITE_hostName = 'hpci2';
+      var microsite = 'HPCI2';
+  body(id=site.name)
+    block content

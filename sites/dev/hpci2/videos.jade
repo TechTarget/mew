@@ -1,0 +1,51 @@
+extends layout
+
+block content
+  #micrositeContainer
+    #micrositeContainerInner
+      #micrositeContainerCompress
+        #micrositeHeader
+          #micrositeHeaderBanner
+            .micrositeModuleContainer
+              p: img(src='http://cdn.ttgtmedia.com/microsites/hpci2/images/micrositeHeaderBanner.jpg', alt='')
+          - var thisPage = 'Videos'
+          include navigation
+          include socialMediaHeader
+        #micrositeContent
+          #micrositeContentColumnFull
+            .videoPage
+              .videoPageMainVideo
+                div(style='display:none')
+                script(language='JavaScript', type='text/javascript', src='http://admin.brightcove.com/js/BrightcoveExperiences.js')
+                object#myExperience.BrightcoveExperience
+                  param(name='bgcolor', value='#FFFFFF')
+                  param(name='width', value='766')
+                  param(name='height', value='410')
+                  param(name='playerID', value='1812777184001')
+                  param(name='playerKey', value='AQ~~,AAAAAFGE4wo~,g57wOIK2TXIIlu1aB_aSP5_mJ6bhhZXz')
+                  param(name='isVid', value='true')
+                  param(name='isUI', value='true')
+                  param(name='dynamicStreaming', value='true')
+                script(type='text/javascript')
+                  brightcove.createExperiences();
+              .videoPageThumbnails
+                ul
+                  li: h6 Infrastructure
+                    a#bclid-1812777184001(href='?bclid=1812777184001')
+                      img(src='http://cdn.ttgtmedia.com/microsites/hpci2/images/video_elPaso_thumb.png')
+                  li: h6 Cloud
+                    a#bclid-1795653051001(href='?bclid=1795653051001')
+                      img(src='http://cdn.ttgtmedia.com/microsites/hpci2/images/video_intelHP_thumb.png')
+                  li: h6 Servers
+                    a#bclid-1795653050001(href='?bclid=1795653050001')
+                      img(src='http://cdn.ttgtmedia.com/microsites/hpci2/images/video_computerWorld_thumb.png')
+                  li: h6 Storage
+                    a#bclid-1795653048001(href='?bclid=1795653048001')
+                      img(src='http://cdn.ttgtmedia.com/microsites/hpci2/images/video_convergedStorage_thumb.png')
+                  li: h6 Networking
+                    a#bclid-1795653049001(href='?bclid=1795653049001')
+                      img(src='http://cdn.ttgtmedia.com/microsites/hpci2/images/video_gilbert_PS_thumb.png')
+          #micrositeContentColumnLeft
+          #micrositeContentColumnRight
+          .micrositeContentColumnSpan
+        include footer

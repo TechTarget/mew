@@ -1,0 +1,28 @@
+extends layoutEmbedded
+
+block content
+  #micrositeContainer
+    #micrositeContainerInner
+      #micrositeContainerCompress
+        #micrositeHeader
+          #micrositeHeaderBanner
+            .micrositeModuleContainer
+              h1 Service Virtualization Performance Center
+        #micrositeContent
+          #micrositeContentColumnFull
+            .introText
+              img(src="images/business-woman.png")
+              h3 Accelerated testing. Quality results.
+              p Service virtualization helps to address all these issues and more. Create understandable, virtualized services, applications or entire systems without relying on teams of developers for coding. No need to wait until all the components are available and deployed to begin end to end testing. Balance quality and speed delivering high quality applications to take advantage of marketplace opportunities while decreasing risk and lowering your cost of quality.
+            include featuredVideo
+          #micrositeContentColumnLeft
+            .contentTabsCaption Discover how service virtualization can accelerate<br />software delivery across these platforms
+            include contentTabs
+          #micrositeContentColumnRight
+            .resources
+              h3 Service Virtualization Resources
+              img(src="images/virtualizationForDummies.jpg", title="Virtualization For Dummies")
+              h4 Learn the Basics of Service Virtualizaton
+              p As our need to deliver software faster and meet market demands has increased, something usually has to be cut.
+            .blog
+              h3 The Rational Tester Blog

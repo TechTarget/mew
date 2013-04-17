@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  #micrositeContainer
+    #micrositeContainerInner
+      #micrositeContainerCompress
+        #micrositeHeader
+          #micrositeHeaderBanner
+            .micrositeModuleContainer
+              p: img(src='http://cdn.ttgtmedia.com/microsites/hpci2/images/micrositeHeaderBanner.jpg', alt='')
+          - var thisPage = 'Home'
+          include navigation
+          include socialMediaHeader
+        #micrositeContent
+          #micrositeContentColumnFull
+            #micrositeContentHeroImage
+              #micrositeContentHeroLeft
+                #groupCi
+                  h2 Converged Infrastructure
+                  h4: a(href='/Infrastructure') Click to learn more
+                h3 Accelerate Responsiveness, Overcome IT Sprawl
+                p A converged infrastructure enables you to shift 70% of your IT budget to innovation, rather than operations.
+                p: a(href='/Infrastructure') Explore now
+              #micrositeContentHeroRight
+                #groupCloud
+                  h2 Cloud
+                  h4: a(href='/Cloud') Click to learn more
+                h3 Manage, Secure and Govern the Cloud
+                p Converged cloud gives you a common architecture to manage cloud delivery models while providing integration and efficient management within your traditional IT environment.
+                p a(href='/Cloud') Explore now
+        include footer

@@ -1,0 +1,13 @@
+- var items = [{caption: 'Banking', image: 'asset3col-banking.jpg'}, {caption: 'Insurance', image: 'asset3col-insurance.jpg'}, {caption: 'Government', image: 'asset3col-government.jpg'}];
+
+.customSplash3col
+  ul
+    for item in items
+      li
+        h3 #{item.caption}
+        img.customSplash3colImage(src="images/#{item.image}")
+        .customSplash3colText
+          p Learn how to simplify IT operations with the latest business solutions.
+          p: a(href="replaceMe") Six reasons why you need a movile capture strategy
+          p: a(href="replaceMe") Capturing informtaion from Citizen movile Devices
+          p: a(href="replaceMe") BPM from back office to the front office and beyond

@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  #micrositeContainer
+    #micrositeContainerInner
+      #micrositeContainerCompress
+        #micrositeHeader
+          #micrositeHeaderBanner
+          - var thisPage = 'Mobile Chaos Challenges'
+          include navigation
+        #micrositeContent
+          #micrositeContentColumnFull
+            // BEGIN: featured video component
+            include featuredVideo-challenges
+            // BEGIN: content matrix component
+            include contentMatrix-challenges
+        include footer

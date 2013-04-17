@@ -1,0 +1,19 @@
+- var thisPage = 'Home'
+
+link(rel='stylesheet', href='css/style.css', type='text/css', media='screen')
+script(src='javascript/script.js')
+#micrositeContainer
+  #micrositeContainerInner
+    #micrositeContainerCompress
+      #micrositeHeader
+        #micrositeHeaderBanner
+        include navigation
+      #micrositeContent
+        #micrositeContentColumnFull
+          // BEGIN: content tabs component
+          include contentTabs
+          // BEGIN: featured video component
+          include featuredVideo
+          // BEGIN: related sites
+          include relatedSites
+      include footer

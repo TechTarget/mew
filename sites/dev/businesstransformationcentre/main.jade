@@ -1,0 +1,44 @@
+link(rel='stylesheet', href='css/style.css', type='text/css', media='screen')
+script(src='javascript/script.js')
+#micrositeContainer
+  #micrositeContainerInner
+    #micrositeContainerCompress
+      #micrositeHeader
+        #micrositeHeaderBanner
+      #micrositeContent
+            #micrositeContentColumnFull
+              .micrositeSubtitle New Strategies to Optimize Your Data Center
+              // BEGIN: featured video component
+              include featuredVideo
+              // END: featured video component
+            #micrositeContentColumnLeft
+              // BEGIN: custom splash
+              .customSplash
+                h2 The Professional Data Center
+                h3 Monthly E-Zine
+                .mediaBlock
+                  img(src='images/pdfCover.png', alt='')
+                  .mediaBlockContent
+                    p
+                      | Oracle helps customers implement best-in-class solutions for operational excellence, business analytics, and risk compliance management. Our deep portfolio of business solutions address a range of customer needs, including social, customer relationship, procurement, and supply chain management.
+                    p
+                      a.buttonViewNow(href='replaceMe') View Now
+                h4 Previous Issues Available for Download
+                ul
+                  li
+                    a(href='replaceMe') November 2012
+                  li
+                    a(href='replaceMe') October 2012
+                  li
+                    a(href='replaceMe') September 2012
+                  li
+                    a(href='replaceMe') August 2012
+              // END: custom splash
+              // BEGIN: content tabs component
+              include contentTabs
+              // END: content tabs component
+              .contentTabsFooter
+                a.viewNow(href='replaceMe') View All Videos
+                a.viewNow(href='replaceMe') View All Downloads
+            #micrositeContentColumnRight
+              img(src='images/placeholder.png', width='300', height='688')

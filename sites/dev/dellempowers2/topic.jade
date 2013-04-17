@@ -1,0 +1,40 @@
+extends layout
+
+block content
+  #micrositeContainer
+    #micrositeContainerInner
+      #micrositeContainerCompress
+        #micrositeHeader
+          #micrositeHeaderBanner
+            .micrositeModuleContainer
+              h1 Power User Community
+          - var thisPage = 'Home'
+          include navigation
+          include socialMediaHeader
+        #micrositeContent
+          #micrositeContentColumnFull
+            include contentNavCarousel
+          .micrositeContentColumnSpan
+            include filmstrip
+          .micrositeContentColumnSpanTopic
+            .micrositeContentColumnSpanLeft
+              // BEGIN: video player
+              object#flashObj(width='630', height='294', classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000', codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,47,0')
+                param(name='movie', value='http://c.brightcove.com/services/viewer/federated_f9?isVid=1&isUI=1')
+                param(name='bgcolor', value='#FFFFFF')
+                param(name='flashVars', value='playerID=1699123539001&playerKey=AQ~~,AAAAAFGE4wo~,g57wOIK2TXJIaAjTwOJlUAzlrb6JU7IH&domain=embed&dynamicStreaming=true')
+                param(name='base', value='http://admin.brightcove.com')
+                param(name='seamlesstabbing', value='false')
+                param(name='allowFullScreen', value='true')
+                param(name='swLiveConnect', value='true')
+                param(name='allowScriptAccess', value='always')
+                embed(src='http://c.brightcove.com/services/viewer/federated_f9?isVid=1&isUI=1', bgcolor='#FFFFFF', flashvars='playerID=1699123539001&playerKey=AQ~~,AAAAAFGE4wo~,g57wOIK2TXJIaAjTwOJlUAzlrb6JU7IH&domain=embed&dynamicStreaming=true', base='http://admin.brightcove.com', name='flashObj', width='630', height='294', seamlesstabbing='false', type='application/x-shockwave-flash', allowfullscreen='true', allowscriptaccess='always', swliveconnect='true', pluginspage='http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash')
+              // END: video player
+            .micrositeContentColumnSpanRight
+              // BEGIN: flite unit
+              script(type='text/javascript', src='http://cdn.widgetserver.com/syndication/platform/InsertWidget/id/939e42f2-6aa9-41c0-9678-4bd667cb833f')
+              noscript
+                a(style='text-decoration:none;display:block;border:0;', href='http://www.widgetserver.com/syndication/backuplink/i/939e42f2-6aa9-41c0-9678-4bd667cb833f', target='_blank')
+                  img(border='0', src='http://www.widgetserver.com/syndication/backupimage/i/939e42f2-6aa9-41c0-9678-4bd667cb833f')
+              // END: flite unit
+        include footer

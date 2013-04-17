@@ -1,0 +1,23 @@
+- var tabs = ['BPM', 'Data Quality', 'Business Analytics'];
+
+.contentTabs
+  .contentTabsNav
+      ul
+        for tab in tabs
+          li: a(href='#') #{tab}>
+  .contentTabsPanelCollection
+    each tab, index in tabs
+      .contentTabsPanel
+        .contentTabsPanelContent.oneColList
+          .contentTabsPanelIntro
+            h3 Panel for tab "#{tab}" (#{index+1} of #{tabs.length} panels)
+            p
+              img.contentTabsPanelIntroGraphic(src='http://placekitten.com/154/118?image=6', height='118', width='154')
+              | Velit egestas dui id ornare arcu odio ut sem. Ultrices neque ornare aenean euismod elementum nisi. Tellus mauris a diam maecenas. Dictumst vestibulum rhoncus est pellentesque elit. Et tortor at risus viverra adipiscing at in tellus. Orci nulla pellentesque dignissim enim sit amet venenatis. Cursus eget nunc scelerisque viverra. Integer enim neque volutpat ac tincidunt vitae semper quis.
+          ul
+            - for (var i = 0; i < 8; ++i) {
+              li
+                h4: a(href='replaceMe') suspendisse ultrices gravida dictum fusce
+                p Vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Viverra vitae congue eu consequat ac felis. Ac tortor vitae purus faucibus ornare suspendisse sed. Faucibus a pellentesque sit amet porttitor eget dolor morbi.
+                p: a.viewNow(href='replaceMe') View Now
+            - }

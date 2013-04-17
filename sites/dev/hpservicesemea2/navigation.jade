@@ -1,0 +1,9 @@
+- var pages = [{name: 'English', filename: 'index.html'}, {name: 'Francais', filename: 'replaceMe'}, {name: 'Italiano', filename: 'replaceMe'}, {name: 'Español', filename: 'replaceMe'}, {name: 'Deutsch', filename: 'replaceMe'}]
+
+#micrositeHeaderNavigation
+  ul
+    for page in pages
+      if page.name === thisPage
+        li.on: a(href='#{page.filename}') #{page.name}
+      else
+        li: a(href='#{page.filename}') #{page.name}

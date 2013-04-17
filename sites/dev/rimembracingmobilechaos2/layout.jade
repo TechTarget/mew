@@ -1,0 +1,11 @@
+include data
+!!! 5
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title #{site.name}
+    link(rel='stylesheet', href='css/style.css', type='text/css', media='screen')
+    script(data-main='javascript/main',src='../_global/javascript/require.js')
+    //- script(src='javascript/script.js')
+  body(id=site.name)
+    block content

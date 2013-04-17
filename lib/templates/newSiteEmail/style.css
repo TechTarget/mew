@@ -1,0 +1,122 @@
+/* Client-specific Styles */
+body{width:100% !important;} .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+body{-webkit-text-size-adjust:none;} /* Prevent Webkit platforms from changing default text sizes. */
+
+/* Reset Styles */
+body{margin:0; padding:0;}
+img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+table td{border-collapse:collapse;}
+#backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+body, #backgroundTable{
+  background-color:#FAFAFA;
+}
+
+#templateContainer{
+  border: 1px solid #bbbbbb;
+}
+
+h1, .h1{
+  color:#333333;
+  display:block;
+  font-family:Arial;
+  font-size:34px;
+  font-weight:bold;
+  line-height:100%;
+  margin: 0 0 10px 0;
+  text-align:left;
+}
+
+h2, .h2{
+  color:#333333;
+  display:block;
+  font-family:Arial;
+  font-size:30px;
+  font-weight:bold;
+  line-height:100%;
+  margin: 0 0 10px 0;
+  text-align:left;
+}
+
+h3, .h3{
+  color:#333333;
+  display:block;
+  font-family:Arial;
+  font-size:26px;
+  font-weight:bold;
+  line-height:100%;
+  margin: 0 0 10px 0;
+  text-align:left;
+}
+
+h4, .h4{
+  color:#333333;
+  display:block;
+  font-family:Arial;
+  font-size:16px;
+  font-weight:bold;
+  line-height:100%;
+  margin: 0 0 20px 0;
+  text-align:left;
+}
+
+#templateContainer, .bodyContent{
+  background-color:#FFFFFF;
+  margin-bottom: 20px;
+}
+
+.bodyContent div{
+  color:#333333;
+  font-family:Arial;
+  font-size:14px;
+  line-height:150%;
+  text-align:left;
+}
+
+.bodyContent img{
+  display:inline;
+  height:auto;
+}
+
+.bodyContent div a:link, .bodyContent div a:visited, /* Yahoo! Mail Override */ .bodyContent div a .yshortcuts /* Yahoo! Mail Override */{
+  /* color:#336699; */
+  font-weight:normal;
+  text-decoration:underline;
+}
+
+.templateDataTable{
+  background-color:#FFFFFF;
+  border:1px solid #DDDDDD;
+}
+
+.dataTableHeading{
+  background-color:#eeeeee;
+  color:#333333;
+  border-bottom:1px solid #DDDDDD;
+  font-family:Helvetica;
+  font-size:13px;
+  font-weight:bold;
+  line-height:150%;
+  text-align:left;
+}
+
+.dataTableContent{
+  border-top:1px solid #DDDDDD;
+  border-bottom:0;
+  color:#333;
+  font-family:Helvetica;
+  font-size:12px;
+  font-weight:bold;
+  line-height:150%;
+  text-align:left;
+}
+
+pre {
+  background-color: #333;
+  color: #fff;
+  font-family: monospace;
+  margin: 0 auto;
+  width: 550px;
+  padding: 10px;
+  border: 1px solid #DDDDDD;
+}

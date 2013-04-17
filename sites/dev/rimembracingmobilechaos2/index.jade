@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  #micrositeContainer
+    #micrositeContainerInner
+      #micrositeContainerCompress
+        #micrositeHeader
+          #micrositeHeaderBanner
+          - var thisPage = 'Home'
+          include navigation
+        #micrositeContent
+          #micrositeContentColumnFull
+            // BEGIN: carousel component
+            include carousel
+            // BEGIN: content matrix component
+            include contentMatrix-home
+        include footer

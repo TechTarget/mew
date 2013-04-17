@@ -1,0 +1,49 @@
+{
+
+  "info": {
+    "genericMessage": "%i",
+    "countTotalSites": "%i sitios web en total: ",
+    "countActiveSites": "%i sitios web activado: ",
+    "countRetiredSites": "%i sitios web retirado: ",
+    "buildingSiteStart": "está construyendo partes del sitios web %i ya",
+    "propertyUpdated": "la propiedad de %i ha estado actualizado",
+    "cdnPurgeStart": "está purgando estos archivos en el CDN:\n",
+    "cdnPurgeEnd": "los archivos en el CDN han estado purgado \n",
+    "siteCreated": "%i ha estado creado",
+    "siteRetired": " ha estado retirado",
+    "ftpFinished": "terminó la sesión de FTP",
+    "ftpStarted": "la sesión de FTP comenzó en %i",
+    "emailSending": "",
+    "emailSuccess": ""
+  },
+
+  "error": {
+    "genericError": "%i",
+    "ftpErrorVpn": "no podía conectar a %i \n¿estás conectado al red?",
+    "argumentsMissing": "los argumentos por %i están perdidos",
+    "notValidProperty": "%i no es una propiedad válida",
+    "needSitename": "entra el nombre del sitios web",
+    "dirNotBuilt": "el directorio de %i no ha estado creado",
+    "dirAlreadyExists": "el directorio ya existe, escoje otro",
+    "siteAlreadyExists": "un sitios web con este nombre ya existe, intenta otro nombre",
+    "siteDoesNotExist": "no hay un registro de un sitios web con el nombre de %i",
+    "noEnvSpecified": "¿en cuál entorno quieres liberar estos archivos? para especificar el entorno usa la marca '-e'",
+    "invalidEnvSpecified": "entorno tiene que ser eng, qa o prod",
+    "cdnPurgeNoUrls": "no hay archivos creado por %i",
+    "siteAlreadyRetired": "%i ya ha estado retirado",
+    "noTypeSites": "no hay sitios de %i",
+    "emailFail": "",
+    "noReleaseNotes": "",
+    "invalidAssetTypeSpecified": "",
+    "missingSiteName": ""
+  },
+
+  "warn": {
+    "dumb": "¡no hagas esto!"
+  },
+
+  "ask": {
+    "why": "¿por qué quieres hacer esto?"
+  }
+
+}

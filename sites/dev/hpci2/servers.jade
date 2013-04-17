@@ -1,0 +1,96 @@
+extends layout
+
+block content
+  #micrositeContainer
+    #micrositeContainerInner
+      #micrositeContainerCompress
+        #micrositeHeader
+          #micrositeHeaderBanner
+            .micrositeModuleContainer
+              p: img(src='http://cdn.ttgtmedia.com/microsites/hpci2/images/micrositeHeaderBanner.jpg', alt='')
+          - var thisPage = 'Servers'
+          include navigation
+          include socialMediaHeader
+        #micrositeContent
+          #micrositeContentColumnFull
+            include slideshow-servers
+          #micrositeContentColumnLeft
+            h2 Focusing on Servers to Deliver the Cloud Through a Converged Infrastructure
+            p
+              | Many savvy IT organizations are recognizing that converged infrastructure is a critical enabling technology for successful cloud computing deployments. In a converged cloud the infrastructures for development and operations are consistently visible, accessible and manageable. Standardization allows portability of services across deployment models and IT elements are shared and pooled for quick assembly and disassembly to support advanced agility and user flexibility.
+            .micrositeContentCallout
+              .micrositeContentCalloutInner
+                h6 Related
+                ul
+                  li
+                    a(href='http://www.bitpipe.com/detail/RES/1337715724_610.html') Delivering an Integrated Infrastructure for the Cloud (IDC)
+                  li
+                    a(href='http://www.bitpipe.com/detail/RES/1343143410_165.html') Build and manage your infrastructure as a service - HP CloudSystem Matrix
+                  li
+                    a(href='http://www.bitpipe.com/detail/RES/1343143381_620.html') IDC Business Value of Blade
+            p
+              | In cloud environments your servers must be able to support the highest levels of virtualization, whether they are rack, blade, tower or scalable systems. It is important to make sure that servers supporting your cloud deployments are the most up-to-date and highest performing machines in your infrastructure. You also may want to consider a faster refresh cycle for the cloud.
+            p
+              | Why such a critical focus on new servers in your converged infrastructure? Because today’s HP ProLiant Gen8 servers are designed to address data center requirements in the cloud era, featuring embedded automation and intelligent management features that change the paradigm for cloud performance and manageability.  Key innovations achieved in Gen8 servers are simply not available in earlier generations. With the intelligence built into today’s ProLiant servers through the HP ProActive Insight Architecture, IT can eliminate tedious tasks while dramatically boosting application performance through automation and optimization.
+            p
+              | It is also important to have a converged infrastructure that integrates with your existing environment and can manage both physical and virtual machines. Solutions such as the HP CloudSystem Matrix greatly reduce complexity for the cloud by combining hardware, storage, software and services into one solution. Read on to learn why focusing on server hardware is critical in deploying the cloud through a converged infrastructure.
+          #micrositeContentColumnRight
+            .micrositeSplashWrapper
+              // Start of Brightcove Player
+              div(style='display:none')
+              //
+                By use of this code snippet, I agree to the Brightcove Publisher T and C
+                found at https://accounts.brightcove.com/en/terms-and-conditions/.
+              script(language='JavaScript', type='text/javascript', src='http://admin.brightcove.com/js/BrightcoveExperiences.js')
+              object#myExperience1753796748001.BrightcoveExperience
+                param(name='bgcolor', value='#FFFFFF')
+                param(name='width', value='300')
+                param(name='height', value='170')
+                param(name='playerID', value='1739575277001')
+                param(name='playerKey', value='AQ~~,AAAAAFGE4wo~,g57wOIK2TXLDvUTMk6gUQ57uYJU8J1y4')
+                param(name='isVid', value='true')
+                param(name='isUI', value='true')
+                param(name='dynamicStreaming', value='true')
+                param(name='@videoPlayer', value='1753796748001')
+              //
+                This script tag will cause the Brightcove Players defined above it to be created as soon
+                as the line is read by the browser. If you wish to have the player instantiated only after
+                the rest of the HTML is processed and the page load is complete, remove the line.
+              script(type='text/javascript')
+                brightcove.createExperiences();
+              // End of Brightcove Player
+            .micrositeSplashWrapper
+              h5 Recommended
+              .micrositeSplashRecommended
+                img.micrositeSplashRecommendedImage(src='http://cdn.ttgtmedia.com/microsites/hpci2/images/recommendedImage-ProLiantDL360p.jpg')
+                h6 HP Server Benefits
+                p
+                  | Thanks to innovative advances, HP ProLiant DL360p and DL380p Gen8 servers provide power, flexibility and serviceability.
+                  a(href='http://www.bitpipe.com/detail/RES/1343143381_477.html') Download this white paper for details.
+              .micrositeSplashRecommended
+                img.micrositeSplashRecommendedImage(src='http://cdn.ttgtmedia.com/microsites/hpci2/images/recommendedImage-ProLiantGen8Servers.jpg')
+                h6 Server Lifecycle Guide
+                p
+                  | There are three critical phases of the server lifecycle that the new HP ProLiant Gen8 server speeds up and simplifies.
+                  a(href='http://www.bitpipe.com/detail/RES/1343143381_302.html') Download this paper to learn what they are.
+            .micrositeSplashWrapper
+              h5 Communities
+              .micrositeSplashCommunities
+                ul
+                  li.micrositeSplashCommunities-rss
+                    a(href='http://h30507.www3.hp.com/t5/Eye-on-Blades-Blog-Trends-in/bg-p/143') Blades Blog
+                  li.micrositeSplashCommunities-rss
+                    a(href='http://h30507.www3.hp.com/t5/Eye-on-Blades-Blog-Trends-in/bg-p/143') ProLiant Blog
+                  li.micrositeSplashCommunities-rss
+                    a(href='http://premierit.intel.com/community/ipip') Read the Intel Premier IT blog
+                  li.micrositeSplashCommunities-rss
+                    a(href='http://h30507.www3.hp.com/t5/Converged-Infrastructure/bg-p/663') Read the HP Converged Infrastructure blog
+                  li.micrositeSplashCommunities-twitter
+                    a(href='http://twitter.com/HPConverge') Follow HP Converged Infrastructure
+                  li.micrositeSplashCommunities-linkedin
+                    a(href='http://www.linkedin.com/groups/HP-Converged-Infrastructure-3816387') Join HP Converged Infrastructure
+                  li.micrositeSplashCommunities-facebook
+                    a(href='http://www.facebook.com/ConvergedInfrastructure?ref=ts') Connect with the HP Converged Infrastructure community
+          .micrositeContentColumnSpan
+            include filmstrip-servers
+        include footer

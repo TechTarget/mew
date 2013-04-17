@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  #micrositeContainer
+    #micrositeContainerInner
+      #micrositeContainerCompress
+        #micrositeHeader
+          #micrositeHeaderBanner
+          - var thisPage = 'English'
+          include navigation
+        #micrositeContent
+          #micrositeContentColumnFull
+            .micrositeCustomContainerLeft
+              h2 The Case for Applications Transformation
+              p Enterprise applications are the lifeblood of your company; you rely on them to handle everything from your payroll, financial statements to tracking your customers.  HP Enterprise Applications Services  helps you align your enterprise-wide applications to business priorities and operational requirements,  reducing time-to-market, and lowering your total cost of ownership.  Find out how HP can help you  transform your applications and provide business solutions to give you a competitive edge.
+            .micrositeCustomContainerRight
+              img(src='images/placeholder1.png')
+            include featuredVideo
+          #micrositeContentColumnLeft
+            include contentTabs
+          #micrositeContentColumnRight
+            .micrositeModuleContainer
+              img(src='images/placeholder2.png')
+            .micrositeModuleContainer
+              img(src='images/placeholder3.png')
+        include footer

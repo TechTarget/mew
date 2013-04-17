@@ -1,0 +1,81 @@
+/* content navigation carousel */
+.contentNavigationCarousel { overflow: hidden; margin-bottom: 20px; }
+.contentCollection { float: left; overflow: hidden; width: 575px; position: relative; background-color: beige; }
+.contentCollection .contentItem { position: absolute; background-color: pink; top: 100%; }
+.contentCollection h2 { line-height: 1.2 !important; }
+.contentCollection p { margin: 0 !important; }
+.contentCollection img { float: left; margin: 0 15px 15px 0; }
+.contentCollection .readMore { display: block; margin-top: 10px; font-weight: bold; }
+.contentNavigation { float: right; width: 360px; }
+.contentNavigation ul { background-color: azure; list-style: none; margin: 0 !important; padding: 0 !important; }
+.contentNavigation li { border-bottom: 1px dotted #999; }
+.contentNavigation li:first-child { border-top: 1px dotted #999; }
+.contentNavigation li.active a { background-color: #eee; }
+.contentNavigation li a { display: block; color: #333 !important; font-size: 13px; margin: 1px 0; padding: 10px 10px; -webkit-transition: background-color .4s; -moz-transition: background-color .4s; -ms-transition: background-color .4s; -o-transition: background-color .4s; transition: background-color .4s; }
+.contentNavigation li a:hover { background-color: #ddd; text-decoration: none !important; -webkit-transition: background-color .4s; -moz-transition: background-color .4s; -ms-transition: background-color .4s; -o-transition: background-color .4s; transition: background-color .4s; }
+
+
+
+
+
+
+
+
+
+
+
+
+/* featured tabs module */
+.micrositeModuleFeaturedTabs { border-bottom: 1px solid #8C8C8C; border-bottom:1px solid #8c8c8c; border-bottom:3px solid #424241; height: 38px; height:38px; height:42px; margin-bottom: 10px; margin-bottom:10px; padding-bottom: 0; padding-bottom:0; padding-bottom:3px; width: 635px; width:635px; z-index: 2; z-index:2; }
+.micrositeModuleFeaturedTabs li { float:left; }
+.micrositeModuleFeaturedTabs > li a { display:block; height: 38px; height:38px; height:49px; margin: 0; margin:0 0 2px 0; outline:none; }
+.micrositeModuleFeatured { height:635px; margin-bottom:25px; overflow:hidden; position:relative; width:100%; }
+.micrositeModuleFeatured > ul { list-style-type:none; margin:0; padding:0; }
+.micrositeFeaturedRelatedBody { max-height: 475px; overflow: auto; padding: 0; width:620px; }
+.micrositeModuleFeaturedOutput { height:673px; top:49px; width:100%; }
+.micrositeModuleFeaturedOutput > li { display:block; height:633px; position:absolute; width:100%; }
+.micrositeModuleFeaturedOutput .micrositeFeaturedWhitePapers, .micrositeModuleFeaturedOutput .micrositeFeaturedCaseStudies, .micrositeModuleFeaturedOutput .micrositeFeaturedTechBriefs { padding:0; }
+.micrositeModuleFeaturedOutput li.micrositeFeaturedWhitePapers, ul.micrositeModuleFeaturedOutput li.micrositeFeaturedCaseStudies, ul.micrositeModuleFeaturedOutput li.micrositeFeaturedTechBriefs { padding:0; }
+ 
+
+
+/* full-page tabs */
+.micrositeTabsNavigation { border-bottom: 8px solid #3580d1; margin: 0 30px 25px; }
+.micrositeTabsNavigation ul { list-style: none; margin: 0 !important; padding: 0 !important; overflow: hidden; }
+.micrositeTabsNavigation li { display: block; float: left; margin: 0 0 0 10px; }
+.micrositeTabsNavigation li:first-child { margin: 0; }
+.micrositeTabsNavigation li a { -moz-border-radius: 5px 5px 0 0; -webkit-border-radius: 5px 5px 0 0; border-radius: 5px 5px 0 0; display: inline-block; width: 290px; color: #fff !important; letter-spacing: 1px; line-height: 38px; font-size: 16px; text-align: center; }
+.micrositeTabsNavigation li a {
+	background: #7d7d7d; /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(125,125,125,1) 70%, rgba(102,102,102,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(70%,rgba(125,125,125,1)), color-stop(100%,rgba(102,102,102,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(125,125,125,1) 70%,rgba(102,102,102,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(125,125,125,1) 70%,rgba(102,102,102,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(125,125,125,1) 70%,rgba(102,102,102,1) 100%); /* IE10+ */
+	background: linear-gradient(top,  rgba(125,125,125,1) 70%,rgba(102,102,102,1) 100%); /* W3C */
+}
+.micrositeTabsNavigation li a:hover, .micrositeTabsNavigation li a:focus { background: #3580d1 !important; text-decoration: none !important; }
+.micrositeTabsNavigation li.active a { background: #3580d1 !important; cursor: default; }
+.micrositeTabsPanes { margin: 0 30px 25px; overflow: hidden; }
+.micrositeTabsPanes > div { display: none; }
+.micrositeTabsPanes > div:first-child { display: block; }  
+
+
+
+/* JScrollpane styles */
+.jspContainer {overflow: hidden;position: relative;}
+.jspPane {position: absolute;}
+.jspVerticalBar {position: absolute;top: 0;right: -10px;width: 16px;height: 100%;background: white;}
+.jspHorizontalBar {position: absolute;bottom: 0;left: 0;width: 100%;height: 16px;background: white;}
+.jspVerticalBar *, .jspHorizontalBar * {margin: 0;padding: 0;}
+.jspCap {display: none;}
+.jspHorizontalBar .jspCap {float: left;}
+.jspTrack {background: #999;position: relative;width:1px;}
+.jspDrag {background: #444;position: relative;top: 0;left: -4px;cursor: pointer;width:9px;border-radius:7px;}
+.jspHorizontalBar .jspTrack, .jspHorizontalBar .jspDrag {float: left;height: 100%;}
+.jspArrow {background: #50506d;text-indent: -20000px;display: block;cursor: pointer;}
+.jspArrow.jspDisabled {cursor: default;background: #80808d;}
+.jspVerticalBar .jspArrow {height: 16px;}
+.jspHorizontalBar .jspArrow {width: 16px;float: left;height: 100%;}
+.jspVerticalBar .jspArrow:focus {outline: none;}
+.jspCorner {background: #eeeef4;float: left;height: 100%;}

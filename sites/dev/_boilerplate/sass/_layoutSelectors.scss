@@ -1,0 +1,22 @@
+/* layout selectors */
+#micrositeContainer, #micrositeContainerInner { margin: 0; }
+
+#micrositeContainerCompress { margin: 0 auto; width: 980px; }
+
+#micrositeContent { font-size: 80%; overflow: hidden; margin: 0 0 25px; }
+
+#micrositeContentColumnFull { margin: 0 0 25px; }
+
+#micrositeContentColumnLeft { float: left; width: 620px; }
+
+#micrositeContentColumnRight { float: right; width: 300px; }
+
+.micrositeContentColumnSpan { clear: both; }
+
+.micrositeModuleContainer { margin: 0; }
+
+.micrositeModuleHeader {
+  margin: 0;
+  
+  h3 { margin: 0; } 
+}

@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  #micrositeContainer
+    #micrositeContainerInner
+      #micrositeContainerCompress
+        #micrositeHeader
+          #micrositeHeaderBanner
+            .micrositeModuleContainer
+              h1 Power User Community
+          - var thisPage = 'Home'
+          include navigation
+          include socialMediaHeader
+        #micrositeContent
+          #micrositeContentColumnFull
+            include slideshow
+            .micrositeContentColumnSpan
+              .micrositeContentColumnSpanLeft
+                h3 Using Technology To Drive Business
+                p
+                  | Taking your business to the next level using technology innovation, that’s The Power To Do More. By deploying today’s advanced solutions within your computing infrastructure – from servers and storage, to virtualization and security, to data center architecture and the cloud – you can create exciting opportunities to redefine your business with unprecedented speed, performance, agility and efficiency. Throughout this site, read how different companies have applied these solutions and established the end-to-end technology underpinnings that will help them accomplish more than they’ve ever dreamed possible.
+              .micrositeContentColumnSpanRight
+                object#flashObj(width='448', height='252', classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000', codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,47,0')
+                  param(name='movie', value='http://c.brightcove.com/services/viewer/federated_f9?isVid=1&isUI=1')
+                  param(name='bgcolor', value='#FFFFFF')
+                  param(name='flashVars', value='@videoPlayer=1128880020001&playerID=1699123565001&playerKey=AQ~~,AAAAAFGE4wo~,g57wOIK2TXKOw-3e4Fm5XyFx3puA5pop&domain=embed&dynamicStreaming=true')
+                  param(name='base', value='http://admin.brightcove.com')
+                  param(name='seamlesstabbing', value='false')
+                  param(name='allowFullScreen', value='true')
+                  param(name='swLiveConnect', value='true')
+                  param(name='allowScriptAccess', value='always')
+                  embed(src='http://c.brightcove.com/services/viewer/federated_f9?isVid=1&isUI=1', bgcolor='#FFFFFF', flashvars='@videoPlayer=1128880020001&playerID=1699123565001&playerKey=AQ~~,AAAAAFGE4wo~,g57wOIK2TXKOw-3e4Fm5XyFx3puA5pop&domain=embed&dynamicStreaming=true', base='http://admin.brightcove.com', name='flashObj', width='448', height='252', seamlesstabbing='false', type='application/x-shockwave-flash', allowfullscreen='true', allowscriptaccess='always', swliveconnect='true', pluginspage='http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash')
+            include filmstrip
+        include footer

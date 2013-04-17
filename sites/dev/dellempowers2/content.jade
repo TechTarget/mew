@@ -1,0 +1,93 @@
+extends layout
+
+block content
+  #micrositeContainer
+    #micrositeContainerInner
+      #micrositeContainerCompress
+        #micrositeHeader
+          #micrositeHeaderBanner
+            .micrositeModuleContainer
+              h1 Power User Community
+          - var thisPage = 'Home'
+          include navigation
+          include socialMediaHeader
+        #micrositeContent
+          #micrositeContentColumnLeft
+            h2 End-to-End Strategies To Reduce Data Center Complexity
+            .micrositeContentCallout
+              .micrositeContentCalloutInner
+                h6 Related
+                ul
+                  li
+                    | Examining the role of
+                    a(href='replaceMe') iSCSI storage-area networks
+                    | in your storage shop
+                  li
+                    | Examine our
+                    a(href='replaceMe') iSCSI handbook
+                  li iSCSI SAN reliability vs. FC SAN performance
+            p
+              | Reducing data center complexities is one of the foremost challenges facing IT professionals today. If businesses are to truly reap the benefits of virtualization and cloud computing, they must have technology infrastructures that are open, scalable, automated, affordable and intelligent.
+            p
+              | How important is it to reduce complexity and improve business agility? Business leaders have identified IT complexity as the single most significant IT growth barrier for business.
+              a(href='#_ftn1', name='_ftnref1', title='') [1]
+              | Forrester Research has identified business agility as “the central business issue of our times.”
+              a(href='#_ftn2', name='_ftnref2', title='') [2]
+            p
+              | In order to reduce complexity in the data center you must take an end-to-end approach to building and managing your infrastructure. What are the key characteristics of an end-to-end data center approach?
+            ol(type='a')
+              li
+                b One Platform To Manage Everything
+                | : Virtualization is a key aspect of any strategic initiative to reduce complexity. With virtualization, organizations have the opportunity to consolidate, optimize and share resources while centralizing management of enterprise applications. The reality is that virtualized and physical environments continue to exist side by side: To reduce the complexity of managing these environments you must deploy a centralized management platform, such as Dell Advanced Infrastructure Manager (AIM), that manages both physical and virtual machines. With this type of platform you will not only be able to centrally manage physical and virtual environments, you will be able to manage all of your server, storage and networking platforms as well.
+              li
+                b An Open Architecture
+                | : One of the reasons data centers have become overwhelmingly complex is because they typically deploy solutions from many different vendors: This results in siloed applications requiring additional solutions to enable integration across platforms. This means more expense and more complexity.  Most organizations are not in a position to start over and throw everything out, so the solution is to use a management platform that is open and supports all of your legacy equipment. The value of using an open architecture, such as the Dell Virtual Integrated System (VIS), is that you leverage existing investments while putting in place an architectural framework that is both intelligent and future-proof.
+            .micrositeContentColumnSpan
+              include filmstrip
+          #micrositeContentColumnRight
+            .vgn-ext-region(vgnextregionname='Microsites-Secondary-1', vgnextregionscope='template', vgnextregiontypes='MicrositesFreeFormComponent,MicrositesTabsComponent,MicrositesEditorialSplashComponent', vgnextregionid='76295440fe338310VgnVCM1000000d01c80aRCRD')
+              .vgn-ext-component(vgnextcomponentid='f4295440fe338310VgnVCM1000000d01c80aRCRD', vgnextxmlname='MicrositesFreeFormComponent', vgnextdisplayname='Microsites - FreeForm Component')
+                // Microsites-Header, www.dellempowers2.techtarget.com, generated at 12:41:52 Thu Jun 28, 2012 , by vpreviewma2.techtarget.com
+                .micrositeModuleContainer
+                  p
+                    // Ad Tags for Dell Empowers_articlePage_0612
+                    // Base size of ad: 300x330
+                    // Placement: Dell Empowers_articlePage_0612 #1
+                    // Placement ID: fa6fa230-4df2-43ea-b7ea-d1197be3c4c5
+                    script(src='http://cdn.widgetserver.com/syndication/platform/InsertWidget/id/fa6fa230-4df2-43ea-b7ea-d1197be3c4c5', type='text/javascript', data-loaded='true')
+            .vgn-ext-region(vgnextregionname='Microsites-Secondary-2', vgnextregionscope='template', vgnextregiontypes='MicrositesFreeFormComponent,MicrositesTabsComponent,MicrositesEditorialSplashComponent', vgnextregionid='e7cf5440fe338310VgnVCM1000000d01c80aRCRD')
+              .vgn-ext-component(vgnextcomponentid='37406556d7438310VgnVCM1000000d01c80aRCRD', vgnextxmlname='MicrositesEditorialSplashComponent', vgnextdisplayname='Microsites - Editorial Splash Component')
+                // Microsites-Secondary-2, dellempowers2.techtarget.com, generated at 17:23:29 Thu Jun 28, 2012 , by vpreviewma2.techtarget.com
+                .micrositeModuleContainer
+                  .industryUpdate
+                    .industryUpdateImageFull
+                      a(href='/DellEmpowers2/document/1320950818_162')
+                        img(src='http://cdn.ttgtmedia.com/microsites/dellempowers2/images/featuredContent_fc_cloud1.jpg', alt='')
+                    .industryUpdateTitle
+                      h4
+                        a(href='/DellEmpowers2/document/1320950818_162')
+                          | Dell Intelligent Data Management- Applying the Efficient IT Approach to Enterprise Storage
+                    .industryUpdateText
+                      p
+                        | The Dell™ Intelligent Data Management strategy is being delivered through Dell Fluid Data™ solutions to help businesses automate, optimize, scale, and protect storage to create an increasingly agile, increasingly Efficient Enterprise.
+            .vgn-ext-region(vgnextregionname='Microsites-Secondary-3', vgnextregionscope='template', vgnextregiontypes='MicrositesFreeFormComponent,MicrositesTabsComponent,MicrositesEditorialSplashComponent', vgnextregionid='49406556d7438310VgnVCM1000000d01c80aRCRD')
+              .vgn-ext-component(vgnextcomponentid='b21cf008ec438310VgnVCM1000000d01c80aRCRD', vgnextxmlname='MicrositesFreeFormComponent', vgnextdisplayname='Microsites - FreeForm Component')
+                // Microsites-Footer, dellempowers2.techtarget.com, generated at 17:13:56 Thu Jun 28, 2012 , by vpreviewma2.techtarget.com
+                .micrositeModuleContainer
+                  .micrositeModuleHeader
+                    h3 Related Resources
+                  p
+                    a(href='http://dellempowers2.techtarget.com/document/1329847756_339', target='_blank')
+                      | Managing
+                      | data intelligently to drive efficiency in the virtual era
+                  p
+                    a(href='http://dellempowers2.techtarget.com/document/1339532132_666', target='_blank')
+                      | Manage
+                      | Data Growth
+            .vgn-ext-region(vgnextregionname='Microsites-Secondary-4', vgnextregionscope='template', vgnextregiontypes='MicrositesFreeFormComponent,MicrositesTabsComponent,MicrositesEditorialSplashComponent')
+              div(style='padding:3px;')
+            .vgn-ext-region(vgnextregionname='Microsites-Secondary-5', vgnextregionscope='template', vgnextregiontypes='MicrositesFreeFormComponent,MicrositesTabsComponent,MicrositesEditorialSplashComponent')
+              div(style='padding:3px;')
+        .micrositeContentColumnSpan
+          include filmstrip
+        include footer

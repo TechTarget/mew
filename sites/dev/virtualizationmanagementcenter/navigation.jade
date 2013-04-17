@@ -1,0 +1,9 @@
+- var pages = [{name: 'Private Cloud', filename: 'index.html'}, {name: 'Server Virtualization', filename: 'servervirtualization.html'}, {name: 'Desktop Virtualization', filename: 'desktopvirtualization.html'}];
+
+#micrositeHeaderNavigation
+  ul
+    for page in pages
+      if page.name === thisPage
+        li.on: a(href='#{page.filename}') #{page.name}
+      else
+        li: a(href='#{page.filename}') #{page.name}

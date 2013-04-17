@@ -1,0 +1,25 @@
+- var tabs = ['Cloud', 'Transformation', 'BigData', 'Security', 'Mobility', 'Outsourcing'];
+
+.contentTabsCaption Transform Your Business with HP Enterprise Services
+p HP Enterprise Services helps businesses and governments more effectively leverage technology to achieve better outcomes. HP provides the infrastructure technology outsourcing services; applications services, consulting, and support that help clients achieve those objectives. Our strategy is to deliver high-value solutions through our talented workforce to help clients innovate, manage information and risk, and become more agile so they can better serve their customers and citizens.
+p Enterprise Services serves 426 of the Fortune 500 companies. We leverage the breadth of the HP portfolio and our global delivery strategy to offer comprehensive IT services to more than 1,000 business and government clients in 90 countries. With our commitment to innovation, HP is driving the evolution of the enterprise—one in which the organization and technology are intertwined.
+
+.contentTabs#contentTabs-English
+  .contentTabsNav
+      ul
+        for tab in tabs
+          li(class='contentTab-#{tab}'): a(href='#') #{tab}
+  .contentTabsPanelCollection
+    each tab, index in tabs
+      .contentTabsPanel
+        h3 Panel for tab "#{tab}" (#{index+1} of #{tabs.length} panels)
+        p: img.contenttabspanelintrographic(src='http://placekitten.com/154/118?image=#{index*2}', height='118', width='154')
+        | Mea labitur singulis intellegebat eu, mei solum impetus referrentur ad, mea quem persequeris no. Pri id similique honestatis, vel senserit liberavisse ne. Pri id similique honestatis, vel senserit liberavisse ne. Pri id similique honestatis, vel senserit liberavisse ne. Pri id similique honestatis, vel senserit liberavisse ne. Id pro modo mediocritatem. Diam dolore docendi ut duo, illum conceptam in vix. Eu errem complectitur vel, esse libris percipitur ex mel, vim ex mundi quidam volutpat. No tritani scaevola apeirian vim. Mea labitur singulis intellegebat eu, mei solum impetus referrentur ad, mea quem persequeris no. Pri id similique honestatis, vel senserit liberavisse ne. Id pro modo mediocritatem. Diam dolore docendi ut duo, illum conceptam in vix. Eu errem complectitur vel, esse libris percipitur ex mel, vim ex mundi quidam volutpat. No tritani scaevola apeirian vim.
+        .oneColList
+          ul
+            - for (var i = 0; i < 5; ++i) {
+              li
+                h4: a(href='replaceMe') Etlam sed est at tellus placerat sodales in erat
+                p Et vel nihil discere delicata, pro autem fierent definitiones ea. Purto nostro tacimates in sea. Vel ea habeo pertinacia, has amet tollit suavitate te. Et quodsi rationibus cum. In eos dicta sanctus, adhuc civibus ad ius. Duo corrumpit incorrupte cu. Illum molestie mel cu, qui ei prompta bonorum probatus.
+                p: a.viewNow(href='replaceMe') View Now
+            - }

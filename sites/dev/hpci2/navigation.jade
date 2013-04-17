@@ -1,0 +1,9 @@
+- var pages = [{name: 'Home', filename: 'home.html'}, {name: 'Infrastructure', filename: 'infrastructure.html'}, {name: 'Cloud', filename: 'cloud.html'}, {name: 'CI', filename: 'ci.html'}, {name: 'Servers', filename: 'servers.html'}, {name: 'Storage', filename: 'storage.html'}, {name: 'Networking', filename: 'networking.html'}, {name: 'Videos', filename: 'videos.html'}, {name: 'Downloads', filename: 'downloads.html'}]
+
+#micrositeHeaderNavigation
+  ul
+    for page in pages
+      if page.name === thisPage
+        li.on: a(href='#{page.filename}') #{page.name}
+      else
+        li: a(href='#{page.filename}') #{page.name}

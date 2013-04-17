@@ -1,0 +1,95 @@
+extends layout
+
+block content
+  #micrositeContainer
+    #micrositeContainerInner
+      #micrositeContainerCompress
+        #micrositeHeader
+          #micrositeHeaderBanner
+            .micrositeModuleContainer
+              p: img(src='http://cdn.ttgtmedia.com/microsites/hpci2/images/micrositeHeaderBanner.jpg', alt='')
+          - var thisPage = 'Storage'
+          include navigation
+          include socialMediaHeader
+        #micrositeContent
+          #micrositeContentColumnFull
+            include slideshow-storage
+          #micrositeContentColumnLeft
+            h2 Drive Success in the Cloud Through A Converged Approach To Storage
+            p
+              | Organizations are creating and storing more data than ever before and cloud computing is both accelerating and complicating that trend. In cloud environments, the storage infrastructure must respond with speed and agility to user requests. Data must be managed as a strategic asset to enable rapid decision-making and, as storage requirements grow, IT must enable simple provisioning, elastic scalability and increased capacity without a massive and expensive buildup in new hardware.
+            .micrositeContentCallout
+              .micrositeContentCalloutInner
+                h6 Related
+                ul
+                  li
+                    a(href='http://www.bitpipe.com/detail/RES/1336662167_651.html') HP Converged Storage: Storage for the next era of IT
+                  li
+                    a(href='http://www.bitpipe.com/detail/RES/1343143381_832.html') Optimized solutions speed the path to cloud
+                  li
+                    a(href='http://www.bitpipe.com/detail/RES/1342025076_336.html')
+                      | (IDG) The Best Way to Build a Cloud / HP CloudSystem Matrix and HP 3PAR Utility Storage
+            p
+              | The other big cloud challenge is this: Even if your organization is using a public cloud service, the responsibility for the data cannot be fully offloaded, so you have to manage your data throughout its entire lifecycle. In building a storage infrastructure for the cloud, it is critical that organizations take advantage of advanced automation processes, including policy management, provisioning and tiering.
+            p
+              | Converged storage has enabled CenterBeam, a cloud services provider based in San Jose, Ca., to improve storage throughput for its cloud customers and focus on strategic initiatives. "We’ve probably reduced the storage administration time of our chief architect by about 65%," says Shahin Pirooz, executive vice president, chief security officer and chief technology officer. "There’s more time for strategic initiatives on how to implement storage arrays for the cloud infrastructure."
+            p
+              | A successful cloud storage solution will deliver scale-out block and file data services, backup, archiving and deduplication–all built from a common modular architecture on standardized platforms, as offered by HP Converged Storage. With HP’s advanced storage solutions as part of a converged infrastructure, you can overcome the limitations of storage silos by pooling resources for enhanced agility and reduced costs. Read on for details about how your storage infrastructure can best enable success in the cloud.
+          #micrositeContentColumnRight
+            .micrositeSplashWrapper
+              // Start of Brightcove Player
+              div(style='display:none')
+              //
+                By use of this code snippet, I agree to the Brightcove Publisher T and C
+                found at https://accounts.brightcove.com/en/terms-and-conditions/.
+              script(language='JavaScript', type='text/javascript', src='http://admin.brightcove.com/js/BrightcoveExperiences.js')
+              object#myExperience1753796746001.BrightcoveExperience
+                param(name='bgcolor', value='#FFFFFF')
+                param(name='width', value='300')
+                param(name='height', value='170')
+                param(name='playerID', value='1739575277001')
+                param(name='playerKey', value='AQ~~,AAAAAFGE4wo~,g57wOIK2TXLDvUTMk6gUQ57uYJU8J1y4')
+                param(name='isVid', value='true')
+                param(name='isUI', value='true')
+                param(name='dynamicStreaming', value='true')
+                param(name='@videoPlayer', value='1753796746001')
+              //
+                This script tag will cause the Brightcove Players defined above it to be created as soon
+                as the line is read by the browser. If you wish to have the player instantiated only after
+                the rest of the HTML is processed and the page load is complete, remove the line.
+              script(type='text/javascript')
+                brightcove.createExperiences();
+              // End of Brightcove Player
+            .micrositeSplashWrapper
+              h5 Recommended
+              .micrositeSplashRecommended
+                img.micrositeSplashRecommendedImage(src='http://cdn.ttgtmedia.com/microsites/hpci2/images/recommendedImage-utilityStorage.jpg')
+                h6 Utility Storage Advantages
+                p
+                  | Read this white paper to learn how utility storage for virtual and cloud computing is the ideal way to meet the instant demands of your customers.
+                  a(href='http://www.bitpipe.com/detail/RES/1336662167_37.html') View now
+              .micrositeSplashRecommended
+                img.micrositeSplashRecommendedImage(src='http://cdn.ttgtmedia.com/microsites/hpci2/images/recommendedImage-esgWP.jpg')
+                h6 Tier-1 Storage Guide
+                p
+                  | With this resource, garner a more complete understanding of what "tier-1" storage means, according to ESG, to be better prepared for the next-generation of data centers.
+                  a(href='http://www.bitpipe.com/detail/RES/1328893824_722.html') View now
+            .micrositeSplashWrapper
+              h5 Communities
+              .micrositeSplashCommunities
+                ul
+                  li.micrositeSplashCommunities-rss
+                    a(href='http://h30507.www3.hp.com/t5/Storage/ct-p/Storage') HP Storage blog
+                  li.micrositeSplashCommunities-rss
+                    a(href='http://premierit.intel.com/community/ipip') Read the Intel Premier IT blog
+                  li.micrositeSplashCommunities-rss
+                    a(href='http://h30507.www3.hp.com/t5/Converged-Infrastructure/bg-p/663') Read the HP Converged Infrastructure blog
+                  li.micrositeSplashCommunities-twitter
+                    a(href='http://twitter.com/HPConverge') Follow HP Converged Infrastructure
+                  li.micrositeSplashCommunities-linkedin
+                    a(href='http://www.linkedin.com/groups/HP-Converged-Infrastructure-3816387') Join HP Converged Infrastructure
+                  li.micrositeSplashCommunities-facebook
+                    a(href='http://www.facebook.com/ConvergedInfrastructure?ref=ts') Connect with the HP Converged Infrastructure community
+          .micrositeContentColumnSpan
+            include filmstrip-storage
+        include footer

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>user.json: an interactive guide</title>
+  <link rel="stylesheet" type="text/css"  href="../css/style.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <div class="container-fluid">
+
+    <div class="row-fluid">
+      <div class="span12">
+        <h1>user.json:<small> An interactive guide</small></h1>
+      </div>
+    </div>
+
+    <div class="row-fluid">
+      <div class="span6">
+        <pre class="npm">
+
+{
+  <span class="pair"><span class="key">"username"</span>: <span class="value">""</span>,</span>
+  <span class="pair"><span class="key">"fullname"</span>: <span class="value">""</span>,</span>
+  <span class="pair"><span class="key">"email"</span>: <span class="value">""</span>,</span>
+  <span class="pair"><span class="key">"language"</span>: <span class="value">"en"</span>,</span>
+  <span class="pair"><span class="key">"os"</span>: <span class="value">""</span>,</span>
+  <span class="pair"><span class="key">"browser"</span>: <span class="value">""</span>,</span>
+  <span class="pair"><span class="key">"useLocalServers"</span>: <span class="value">false</span>,</span>
+  <span class="pair"><span class="key">"localServers"</span>: {
+    <span class="key">"documentation"</span>: <span class="value">""</span>,
+    <span class="key">"dev"</span>: <span class="value">""</span>,
+    <span class="key">"build"</span>: <span class="value">""</span></span>
+  },
+  <span class="pair"><span class="key">"ftp"</span>: {
+    <span class="key">"host"</span>: <span class="value">""</span>,
+    <span class="key">"port"</span>: <span class="value">21</span>,
+    <span class="key">"mediaPath"</span>: <span class="value">""</span>,
+    <span class="key">"username"</span>: <span class="value">""</span>,
+    <span class="key">"password"</span>: <span class="value">""</span></span>
+  },
+  <span class="pair"><span class="key">"cdn"</span>: {
+    <span class="key">"url"</span>: <span class="value">""</span>,
+    <span class="key">"mediaPath"</span>: <span class="value">""</span>,
+    <span class="key">"username"</span>: <span class="value">""</span>,
+    <span class="key">"password"</span>: <span class="value">""</span></span>
+  },
+  <span class="pair"><span class="key">"smtp"</span>: {
+    <span class="key">"emailService"</span>: <span class="value">""</span>,
+    <span class="key">"emailUser"</span>: <span class="value">""</span>,
+    <span class="key">"emailPassword"</span>: <span class="value">""</span></span>
+  },
+  <span class="pair"><span class="key">"notifications"</span></span>: {
+    <span class="pair"><span class="key">"create"</span>: {
+      <span class="key">"sendEmails"</span>: <span class="value">false</span>,
+      <span class="key">"emailTemplateName"</span>: <span class="value">"newSiteEmail"</span>,
+      <span class="key">"emailSubject"</span>: <span class="value">"New microsite created: "</span>,
+      <span class="key">"recipients"</span>: <span class="value">[]</span></span>
+  },
+    <span class="pair"><span class="key">"release"</span>: {
+      <span class="key">"sendEmails"</span>: <span class="value">false</span>,
+      <span class="key">"emailTemplateName"</span>: <span class="value">"releaseEmail"</span>,
+      <span class="key">"emailSubject"</span>: <span class="value">"Release details for: "</span>,
+      <span class="key">"recipients"</span>: <span class="value">[]</span></span>
+    }
+  }
+}
+
+            </pre>
+        </div>
+        <div class="span6">
+          <div class="hint">loading...</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
