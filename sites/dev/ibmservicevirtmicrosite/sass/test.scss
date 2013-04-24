@@ -1,0 +1,43 @@
+/*.tabsVerticalLeft .contentTabsNav, .tabsVerticalRight .contentTabsNav {
+  width: 180px;
+  height: 428px; }*/
+
+.tabsVerticalLeft .contentTabsNav{
+	width:180px;
+	height: 428px;
+}
+
+.tabsVerticalRight{
+	@extend .tabsVerticalLeft;
+}
+
+.tabsVerticalLeft .contentTabsNav li.active a:after{
+	content: '';
+	position: absolute;
+	display: block;
+	height: 0;
+	width: 0;
+}
+
+.tabsVerticalRight .contentTabsNav li.active a:before{
+	@extend .tabsVerticalLeft;
+}
+
+.tabsVerticalTop .contentTabsNav li.active a:after{
+	@extend .tabsVerticalLeft;
+}
+
+.tabsVerticalBottom .contentTabsNav li.active a:before{
+	@extend .tabsVerticalLeft;
+}
+
+
+/*.tabsVerticalLeft .contentTabsNav li.active a:after,
+.tabsVerticalRight .contentTabsNav li.active a:before,
+.tabsHorizontalTop .contentTabsNav li.active a:after,
+.tabsHorizontalBottom .contentTabsNav li.active a:before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 0;
+  width: 0; }*/

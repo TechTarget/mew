@@ -1,0 +1,88 @@
+/* social media & article toolbar */
+#micrositeSocialMediaNav, #micrositeSocialMediaFooter { position: absolute; }
+
+#micrositeSocialMediaNav {
+  right: 20px;
+  top: 15px;
+}
+
+#micrositeSocialMediaFooter {
+  right: 20px;
+  top: 35px
+}
+
+.micrositeSocialMediaButtons ul, #micrositeSocialMediaNav ul, #micrositeSocialMediaFooter ul {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.micrositeSocialMediaButtons li, #micrositeSocialMediaNav li, #micrositeSocialMediaFooter li {
+  display: block;
+  float: left;
+  line-height: 0;
+  margin: 0 0 0 8px !important;
+}
+
+.micrositeSocialMediaButtons li > a, #micrositeSocialMediaNav li > a, #micrositeSocialMediaFooter li > a {
+  background-image: url(../images/spriteSocialMedia.png);
+  background-repeat: no-repeat;
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-indent: 100%;
+}
+
+.micrositeSocialMedia-facebook a {
+  background-position: -38px 0;
+  height: 17px;
+  top: 1px;
+  width: 17px;
+}
+
+.micrositeSocialMedia-linkedin a {
+background-position: -56px 0; height: 17px; top: 1px; width: 17px; }
+
+.micrositeSocialMedia-twitter a {
+  background-position: -74px 0;
+  height: 17px;
+  top: 1px;
+  width: 17px;
+}
+
+.micrositeSocialMedia-email a {
+  background-position: -110px 0;
+  height: 20px;
+  top: 0;
+  width: 26px;
+}
+
+.micrositeSocialMediaButtons {
+  display: none;
+  float: right;
+}
+
+#articleToolbar {
+  border-bottom: 1px dotted #999;
+  border-top: 1px dotted #999;
+  overflow: hidden;
+  padding: 4px 0;
+  min-height: 20px;
+  margin: 0 0 10px;
+}
+
+#byline {
+  float: left;
+  font-size: 12px;
+  line-height: 1.1;
+  width: 450px;
+}
+
+#byline p { margin-bottom: 0; }
+
+#byline .author {
+  float: left;
+  font-weight: bold;
+  padding: 7px 0 0;
+}
