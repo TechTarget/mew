@@ -23,17 +23,17 @@ $(document).ready(function () {
 
       English: {
         text: 'Contact HP',
-        url: 'http://www8.hp.com/us/en/contact-hp/contact.html'
+        url: 'mailto:enterprisesolutions@hp.com'
       },
 
       Chinese: {
         text: '联系方式 HP',
-        url: 'http://www8.hp.com/cn/zh/contact-hp/contact.html'
+        url: 'mailto:enterprisesolutions@hp.com'
       },
 
       Japanese: {
         text: 'お問い合わせ HP',
-        url: 'http://www8.hp.com/jp/ja/contact-hp/contact.html'
+        url: 'mailto:enterprisesolutions@hp.com'
       }
 
     };
@@ -42,9 +42,6 @@ $(document).ready(function () {
       'class': 'button',
       text: buttonLanguageMap[lang].text,
       href: buttonLanguageMap[lang].url
-    }).on('click', function(e) {
-      e.preventDefault();
-      window.open(this.href);
     });
 
     return button;

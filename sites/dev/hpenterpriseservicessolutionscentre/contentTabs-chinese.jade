@@ -1,0 +1,26 @@
+- var tabs = ['Cloud', 'Transformation', 'BigData', 'Security', 'Mobility', 'Outsourcing'];
+
+.contentTabsCaption 使用惠普企业服务变革您的业务
+p HP 企业服务帮助公司及政府更有效地利用技术来获得更好的收益。HP 提供基础设施技术外包服务，也提供帮助客户达成这些目标的应用服务、咨询和支持。我们的策略是通过我们的人才队伍交付高价值的解决方案，从而帮助客户实现创新、管理风险并变得更灵活，客户也因此能够更好地服务他们的客户和市民。
+
+p 企业服务已经服务于财富500强公司中的426家。我们凭借HP 组合的广度以及我们的全球交付策略来为90个国家的10000多家公司和政府客户提供复杂的IT 服务。HP 承诺创新，我们正在推动企业到一的进化，组织和技术将交织在一起。
+
+.contentTabs#contentTabs-Chinese
+  .contentTabsNav
+      ul
+        for tab in tabs
+          li(class='contentTab-#{tab}'): a(href='#') #{tab}
+  .contentTabsPanelCollection
+    each tab, index in tabs
+      .contentTabsPanel
+        h3 Panel for tab "#{tab}" (#{index+1} of #{tabs.length} panels)
+        p: img.contenttabspanelintrographic(src='http://placekitten.com/154/118?image=#{index*2}', height='118', width='154')
+        | Mea labitur singulis intellegebat eu, mei solum impetus referrentur ad, mea quem persequeris no. Pri id similique honestatis, vel senserit liberavisse ne. Pri id similique honestatis, vel senserit liberavisse ne. Pri id similique honestatis, vel senserit liberavisse ne. Pri id similique honestatis, vel senserit liberavisse ne. Id pro modo mediocritatem. Diam dolore docendi ut duo, illum conceptam in vix. Eu errem complectitur vel, esse libris percipitur ex mel, vim ex mundi quidam volutpat. No tritani scaevola apeirian vim. Mea labitur singulis intellegebat eu, mei solum impetus referrentur ad, mea quem persequeris no. Pri id similique honestatis, vel senserit liberavisse ne. Id pro modo mediocritatem. Diam dolore docendi ut duo, illum conceptam in vix. Eu errem complectitur vel, esse libris percipitur ex mel, vim ex mundi quidam volutpat. No tritani scaevola apeirian vim.
+        .oneColList
+          ul
+            - for (var i = 0; i < 5; ++i) {
+              li
+                h4: a(href='replaceMe') Etlam sed est at tellus placerat sodales in erat
+                p Et vel nihil discere delicata, pro autem fierent definitiones ea. Purto nostro tacimates in sea. Vel ea habeo pertinacia, has amet tollit suavitate te. Et quodsi rationibus cum. In eos dicta sanctus, adhuc civibus ad ius. Duo corrumpit incorrupte cu. Illum molestie mel cu, qui ei prompta bonorum probatus.
+                p: a.viewNow(href='replaceMe') View Now
+            - }

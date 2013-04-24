@@ -122,7 +122,7 @@ audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 .micrositeSocialMedia-email a { background-position: 0 0; top: 0; width: 52px; }
 
 /* layout selectors */
-body { background-color: #e5e8e8; font-family: HPSimplifiedRegular, Arial, sans-serif; }
+body { background-color: #e5e8e8; font-family: 微软雅黑, HPSimplifiedRegular, Arial, sans-serif; }
 h1, h2, h3, h4, h5, h6 { font-family: HPSimplifiedRegular, Arial, sans-serif; font-weight: normal; }
 #micrositeContainerInner { width: 980px; margin: 0 auto; }
 #micrositeContainerCompress { background-color: #fff; padding: 20px 20px; }
