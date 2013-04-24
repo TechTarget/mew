@@ -1,0 +1,23 @@
+/*.tabsVerticalLeft .contentTabsNav, .tabsVerticalRight .contentTabsNav {
+  width: 180px;
+  height: 428px; }*/
+.tabsVerticalLeft .contentTabsNav, .tabsVerticalRight .contentTabsNav, .tabsVerticalRight .contentTabsNav li.active a:before .contentTabsNav, .tabsVerticalTop .contentTabsNav li.active a:after .contentTabsNav, .tabsVerticalBottom .contentTabsNav li.active a:before .contentTabsNav {
+  width: 180px;
+  height: 428px; }
+
+.tabsVerticalLeft .contentTabsNav li.active a:after, .tabsVerticalRight .contentTabsNav li.active a:after, .tabsVerticalTop .contentTabsNav li.active a:after .contentTabsNav li.active a:after, .tabsVerticalBottom .contentTabsNav li.active a:before .contentTabsNav li.active a:after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 0;
+  width: 0; }
+
+/*.tabsVerticalLeft .contentTabsNav li.active a:after,
+.tabsVerticalRight .contentTabsNav li.active a:before,
+.tabsHorizontalTop .contentTabsNav li.active a:after,
+.tabsHorizontalBottom .contentTabsNav li.active a:before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 0;
+  width: 0; }*/

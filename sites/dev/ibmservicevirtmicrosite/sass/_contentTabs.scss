@@ -1,0 +1,259 @@
+/* content tabs plugin styles */
+.contentTabs {
+  border: 1px solid #cccccc;
+  overflow: hidden;
+  margin: 0 0 25px;
+  position: relative; }
+
+.contentTabsNav {
+  background-color: #fafafa;
+  position: relative; 
+
+  ul {
+    background-color: #fff;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none; 
+  }
+
+  li {
+  border-bottom: 1px solid #cccccc; 
+    &:hover{
+      background-color: #d4e9f2; 
+    }
+    a{
+      color: black !important;
+      display: block;
+      font-size: 11px;
+      text-transform: uppercase;
+      padding: 10px;
+      max-height: 38px;
+
+      &:hover{
+        text-decoration: none !important; 
+      }
+    }
+    
+    &.active{
+      a{
+        color: white !important;
+        background-color: #00679c !important;
+        border-bottom: none;
+        font-size: 11px;
+        position: relative; 
+      }
+    }
+  }
+}
+
+.contentTabsPanel {
+  display: none;
+  color: #4c4d4f;
+  overflow-y: scroll;
+  overflow-x: hidden; 
+
+  &:first-child{
+    display:block;
+  }
+
+  p{
+    line-height: 1.4 !important;
+    margin: 0 0 10px !important;
+  
+    a{
+      color: #00679c !important;
+    }
+  }
+
+  h3{
+    color: #ac1f82 !important;
+    font-size: 14px !important;
+    margin: 0 0 5px !important;
+  }
+}
+
+.contentTabsPanelIntroGraphic {
+  border: 1px solid #cccccc !important;
+  float: right;
+  margin: 0 0 10px 10px; }
+
+.tabsVerticalLeft .contentTabsNav{
+  width:180px;
+  height: 428px;
+}
+
+.tabsVerticalRight{
+  @extend .tabsVerticalLeft;
+}
+
+.tabsVerticalLeft .contentTabsNav li.active a:after,
+.tabsVerticalRight .contentTabsNav li.active a:before,
+.tabsHorizontalTop .contentTabsNav li.active a:after,
+.tabsHorizontalBottom .contentTabsNav li.active a:before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 0;
+  width: 0; }
+
+.tabsVerticalLeft .contentTabsNav {
+  float: left;
+  border-right: 1px solid #cccccc; }
+
+.tabsVerticalLeft .contentTabsNav li.active a:after {
+  top: 0;
+  right: -12px;
+  border-top: 21px solid transparent;
+  border-left: 12px solid #00679c;
+  border-bottom: 20px solid transparent; }
+
+.tabsVerticalLeft .contentTabsPanelCollection {
+  float: right;
+  width: 437px; }
+
+.tabsVerticalRight .contentTabsNav {
+  float: right;
+  border-left: 1px solid #cccccc; }
+
+.tabsVerticalRight .contentTabsNav li.active a:before {
+  top: 0;
+  left: -12px;
+  border-top: 21px solid transparent;
+  border-right: 12px solid #0099d8;
+  border-bottom: 21px solid transparent; }
+
+.tabsVerticalRight .contentTabsPanelCollection {
+  float: left;
+  width: 740px; }
+
+.tabsHorizontalTop .contentTabsNav ul {
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 20px !important;
+  text-align: center; }
+
+.tabsHorizontalTop .contentTabsNav li, .tabsHorizontalBottom .contentTabsNav li {
+  display: inline-block;
+  border-right: 1px solid #cccccc;
+  border-bottom: none; }
+
+.tabsHorizontalTop .contentTabsNav li:first-child, .tabsHorizontalBottom .contentTabsNav li:first-child {
+  border-left: 1px solid #cccccc; }
+
+.tabsHorizontalTop .contentTabsNav li.active a:after {
+  top: 38px;
+  left: 33%;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #0099d8; }
+
+.tabsHorizontalBottom .contentTabsNav {
+  position: relative;
+  top: 475px; }
+
+.tabsHorizontalBottom .contentTabsNav ul {
+  border-top: 1px solid #cccccc;
+  margin-top: 20px !important;
+  text-align: center; }
+
+.tabsHorizontalBottom .contentTabsNav li:first-child {
+  border-left: 1px solid #cccccc; }
+
+.tabsHorizontalBottom .contentTabsNav li.active a:before {
+  top: -10px;
+  left: 33%;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #0099d8; }
+
+.tabsHorizontalBottom .contentTabsPanelCollection {
+  margin-top: -60px;
+  margin-bottom: 60px; }
+
+.tabsNone .contentTabsNav {
+  display: none; }
+
+.pinPanelIntro .contentTabsPanel {
+  overflow-y: hidden;
+  overflow-x: hidden; }
+
+.pinPanelIntro .contentTabsPanelContent {
+  height: 330px;
+  padding: 0 15px;
+  overflow-y: scroll;
+  overflow-x: hidden; }
+
+.pinPanelIntro .contentTabsPanelIntro {
+  border-bottom: 1px solid #ac1f82;
+  background-color: #ececec;
+  height: 72px;
+  padding: 10px 15px;
+  margin: 0 0 15px;
+  overflow: hidden; }
+
+/* copy these along wih content tabs since they're used in the panel views */
+.mediaBlock, .mediaBlockContent {
+  overflow: hidden;
+  _overflow: visible;
+  zoom: 1; }
+
+.mediaBlock img {
+  float: left;
+  margin-right: 10px;
+  display: block; }
+
+.oneColList, .twoColGrid {
+  clear: both; }
+
+.oneColList > ul, .twoColGrid > ul {
+  clear: both;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+  overflow: hidden; }
+
+.twoColGrid ul > li {
+  clear: left;
+  border-top: 1px solid #dddddd;
+  overflow: hidden; }
+
+.oneColList ul > li:first-child, .twoColGrid ul > li:first-child {
+  border: none;
+  margin-top: 0; }
+
+.twoColGrid .gridItem {
+  width: 46%;
+  float: left;
+  margin: 15px 10px; }
+
+.twoColGrid .gridItem:first-child {
+  border-right: 1px solid #dddddd;
+  padding-right: 10px; }
+
+.twoColGrid .gridItem p {
+  margin: 10px 0 0 !important;
+  line-height: 1.1 !important; }
+
+.twoColGrid .mediaBlockImage {
+  width: 80px;
+  height: 100px; }
+
+.oneColList {
+  margin: -10px 0 0; }
+
+.oneColList li {
+  border-top: 1px solid #dddddd;
+  margin: 15px 0 5px;
+  padding: 15px 0 0; }
+
+.oneColList h4 {
+  font-size: 16px;
+  margin: 0 0 5px !important; }
+
+.oneColList p {
+  margin: 0 0 5px !important; }
+
+.contentTabsCaption {
+  color: #ac1f82;
+  font-family: 'LubalinGraph', Arial, sans-serif;
+  font-size: 20px;
+  margin: 0 0 10px !important; }

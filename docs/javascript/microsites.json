@@ -54,7 +54,7 @@
     },
     "APCDataCenter": {
       "createDate": 1338350400000,
-      "isEmbedded": true,
+      "isEmbedded": false,
       "isActive": false,
       "isOldDesign": false,
       "siteDirectory": "apcdatacenterpowerzone",
@@ -385,6 +385,19 @@
       "siteDirectory": "ibmservicevirtmicrosite",
       "url": "http://searchsoftwarequality.techtarget.com/IBMServiceVirtualiztion",
       "urlPreview": "http://preview.techtarget.com:8080/IBMServiceVirtualization",
+      "releases": {
+        "count": 0,
+        "last": 0
+      }
+    },
+    "DellEmpowers": {
+      "createDate": 1366214413204,
+      "isActive": false,
+      "isEmbedded": false,
+      "isOldDesign": true,
+      "siteDirectory": "dellempowers",
+      "url": "http://www.dellempowers.com",
+      "urlPreview": "http://preview.techtarget.com:8080/DellEmpowers",
       "releases": {
         "count": 0,
         "last": 0

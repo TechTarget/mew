@@ -1,0 +1,12 @@
+/* media object block */
+.mediaBlock {
+  margin: 10px;
+  
+  img { float: left; margin-right: 10px; display: block; }
+}
+
+.mediaBlock, .mediaBlockContent {
+  overflow: hidden;
+  _overflow: visible;
+  zoom: 1;
+}
