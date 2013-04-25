@@ -32,7 +32,7 @@ $(document).ready(function () {
       },
 
       Japanese: {
-        text: 'お問い合わせ HP',
+        text: 'HPお問い合わせ',
         url: 'mailto:enterprisesolutions@hp.com'
       }
 
