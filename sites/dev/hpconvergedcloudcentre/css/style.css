@@ -246,16 +246,16 @@ img.infoGraphic { float: right; margin: 0 0 0 15px; }
 .micrositeFeaturedRelatedHeader { margin: 0 0 5px 0; }
 .micrositeFeaturedRelatedHeader h3 { display: none; font-size: 17px; }
 
-.micrositeFeaturedTabApplications > a { background: url(../images/tab_applicationsOff.png) no-repeat; display: block; width: 152px; }
+.micrositeFeaturedTabApplications > a { background: url(../images/tab_applicationsOff.png) no-repeat; display: block; width: 169px; }
 .micrositeFeaturedTabApplications > a.current, .micrositeFeaturedTabApplications > a:hover { background: url(../images/tab_applicationsOn.png) no-repeat; }
-.micrositeFeaturedTabContinuity > a { background: url(../images/tab_continuityOff.png) no-repeat; display: block; width: 152px; }
+.micrositeFeaturedTabContinuity > a { background: url(../images/tab_continuityOff.png) no-repeat; display: block; width: 146px; }
 .micrositeFeaturedTabContinuity > a.current, .micrositeFeaturedTabContinuity > a:hover { background: url(../images/tab_continuityOn.png) no-repeat; }
 .micrositeFeaturedTabManagedCloud > a { background: url(../images/tab_managedCloudOff.png) no-repeat; display: block; width: 186px; }
 .micrositeFeaturedTabManagedCloud > a.current, .micrositeFeaturedTabManagedCloud > a:hover { background: url(../images/tab_managedCloudOn.png) no-repeat; }
-.micrositeFeaturedTabTransform > a { background: url(../images/tab_transformOff.png) no-repeat; display: block; width: 161px; }
+.micrositeFeaturedTabTransform > a { background: url(../images/tab_transformOff.png) no-repeat; display: block; width: 180px; }
 .micrositeFeaturedTabTransform > a.current, .micrositeFeaturedTabTransform > a:hover { background: url(../images/tab_transformOn.png) no-repeat; }
 
-.micrositeFeaturedTabInfrastructure > a { background: url(../images/tab_infrastructureOff.png) no-repeat; display: block; width: 186px; }
+.micrositeFeaturedTabInfrastructure > a { background: url(../images/tab_infrastructureOff.png) no-repeat; display: block; width: 156px; }
 .micrositeFeaturedTabInfrastructure > a.current, .micrositeFeaturedTabInfrastructure > a:hover { background: url(../images/tab_infrastructureOn.png) no-repeat; }
 
 
