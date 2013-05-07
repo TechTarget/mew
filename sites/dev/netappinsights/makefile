@@ -23,6 +23,7 @@ default:
 	@echo "* compiling jade templates..."
 	@jade -P embedded.jade
 	@jade -P layoutEmbedded.jade
+	@jade -P three_options.jade
 	
 
 	@echo "* compiling sass..."

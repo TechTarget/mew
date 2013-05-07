@@ -25,6 +25,14 @@ $(document).ready(function () {
     activeItem: -1
   });
 
+ $(function() {
+     var pgurl = window.location.href.substr(window.location.href.lastIndexOf("/")+1);
+     $(".leftColumnNav ul li div a").each(function(){
+          if($(this).attr("href") == pgurl)
+          $(this).parent().addClass("active");
+     })
+});
+
 });
 // END: doc ready
 
