@@ -6,6 +6,7 @@ html {
 }
 
 body {
+  font-family: "Helvetica Neue",arial, sans-serif;
   margin: 0;
   font-size: 1em;
   line-height: 1.4;
@@ -22,7 +23,7 @@ audio, canvas, video {
 [hidden] { display: none; }
 
 /* 'namespace' as much of normalize as possible due to embedded microsites */
-#micrositeContainer {
+#micrositeContainer, #micrositeContainerTopic {
   background-color: #fff;
   color: #000;
   font-family: arial, sans-serif;

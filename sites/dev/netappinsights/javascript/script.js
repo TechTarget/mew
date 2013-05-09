@@ -8,7 +8,11 @@ $(document).ready(function () {
   $('body *').inlineIpsum({token: '@'});
 
   $('.rightColumn .author').addThisShare({
-     addThisButtons: ['facebook', 'twitter', 'linkedin', 'email']
+     addThisButtons: ['linkedin', 'facebook', 'twitter', 'email']
+  });
+
+  $('#micrositeContainerTopic .rightColumn h2').addThisShare({
+     addThisButtons: ['linkedin', 'facebook', 'twitter', 'email']
   });
 
   $('#micrositeContainer').addThisShare({
@@ -25,12 +29,33 @@ $(document).ready(function () {
     activeItem: -1
   });
 
- $(function() {
-     var pgurl = window.location.href.substr(window.location.href.lastIndexOf("/")+1);
-     $(".leftColumnNav ul li div a").each(function(){
-          if($(this).attr("href") == pgurl)
-          $(this).parent().addClass("active");
-     })
+//  $(function() {
+//      var pgurl = window.location.href.substr(window.location.href.lastIndexOf("/")+1);
+//      $(".leftColumnNav ul li div a").each(function(){
+//           if($(this).attr("href") == pgurl)
+//           $(this).parent().addClass("active");
+//      })
+// });
+
+// $(function(){
+
+//     var url = window.location.pathname, 
+//         urlRegExp = new RegExp(url.replace(/\/$/,'') + "$"); // create regexp to match current url pathname and remove trailing slash if present as it could collide with the link in navigation in case trailing slash wasn't present there
+//         // now grab every link from the navigation
+//         $('.leftColumnNav a').each(function(){
+//             // and test its normalized href against the url pathname regexp
+//             if(urlRegExp.test(this.href.replace(/\/$/,''))){
+//                 $(this).parent().addClass('active');
+//             }
+//         });
+
+// });
+
+$(function() {
+  var pageURL=window.location.pathname; 
+
+  $(".leftColumnNav a[href*='"+pageURL+"']").parent().addClass("active");
+
 });
 
 });

@@ -21,7 +21,8 @@ endef
 default:
 
 	@echo "* compiling jade templates..."
-	@jade -P embedded.jade
+	@jade -P article.jade
+	@jade -P topic.jade
 	@jade -P layoutEmbedded.jade
 	@jade -P three_options.jade
 	
