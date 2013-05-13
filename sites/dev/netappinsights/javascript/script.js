@@ -58,6 +58,29 @@ $(function() {
 
 });
 
+// For What Is This menu
+
+    $('#whatIsThis > li').each(function () {
+        var t = null;
+        var li = $(this);
+        li.hover(function () {
+            t = setTimeout(function () {
+                li.find("ul").stop(true, true).slideDown(200);
+                t = null;
+            });
+        }, function () {
+            if (t) {
+                clearTimeout(t);
+                t = null;
+            }
+            else
+                li.find("ul").slideUp(200);
+        });
+    });
+
+
+
+
 });
 // END: doc ready
 

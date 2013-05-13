@@ -73,7 +73,15 @@ html(lang='en', dir='ltr')
         // BEGIN: embedded microsite
         #micrositeAdvertisement
           img(src="images/TT-SponsoredNews.png")
-          a(href='#') What is this?
+          ul#whatIsThis
+            li
+              a What is this?
+              ul.subwhatIsThis
+                li 
+                  h4 About NetApp Insights
+                  p Storage is a game-changing technology for the storage industry. When combined with intelligent caching software, storage can speed access to critical data and improve the efficiency of your entire data infrastructure.
+                  a(href='#') Learn More
+          //- a(href='#') What is this?
           #micrositeClose
             a(href='http://searchdatamanagement.techtarget.com') Close
         // END: embedded microsite

@@ -1,0 +1,127 @@
+/* Navigation */
+
+#whatIsThis
+{
+    margin-left:230px;
+    position: absolute;
+}
+
+#whatIsThis li {
+  float:left;
+  display:block;
+  height:25px;
+  position:relative;
+  z-index:500;
+  }
+  
+
+#whatIsThis li a {
+  display:block;
+  font-size:11px;
+  font-weight:300;
+  height:25px;
+  padding: 0 15px;
+  text-decoration:none;
+  color:#fff;
+  }    
+
+#whatIsThis li a:hover {
+  color:#444;
+  background: #fff;
+  padding: 0 15px;
+  }
+
+#whatIsThis a.selected {
+  color:#444;
+  background: #fff;
+  }
+
+#whatIsThis ul {
+  box-shadow: 0px 10px 15px 0px #333;
+  position:absolute;
+  left:0;
+  display:none;
+  margin:0;
+  padding:0;
+  list-style:none;
+  width:auto;
+  background:#fff;
+  top:25px;
+  }
+  
+  #whatIsThis li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+      background:#fff url("../images/whatsThisArrowHover.png")no-repeat 5px 10px;
+	color:#444;
+	text-decoration:none;
+}
+/*
+#whatIsThis ul li {
+	margin:0;
+	padding:0;
+	width:100%;
+  }*/
+
+
+#whatIsThis li ul li 
+{
+	font-size:14px;
+      display:block;  
+	color:#444;
+      height: auto;
+	text-decoration:none;
+	width:440px;
+	margin:0 2px 9px 0;
+	padding:20px;
+  }
+
+  
+
+
+#whatIsThis li ul a {
+	background:#ebebea;
+	padding:10px 0 0 10px;
+	font-size:12pt;
+    display:block;  
+	color:#20204e;
+	text-decoration:none;
+
+  }
+
+  #whatIsThis li:hover ul h4{
+    color: #444;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 10px;
+  }
+  
+  #whatIsThis li:hover ul p{
+    color: #444;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.5em !important;
+  }
+
+#whatIsThis li:hover ul a {
+	background:#0e68c8;
+  border-radius: 3px;
+    color: #fff !important;
+      display:block;  
+      font-size:12px; 
+      height: 12px;
+      line-height: 1;
+	color:#20204e;
+	padding:10px 15px;
+	text-decoration:none;
+  }
+
+#whatIsThis li:hover ul a:hover {
+	background:darken(#0e68c8,10%);
+  color: #fff;
+    display:block;  
+	color:#fff;
+	text-decoration:none;
+
+  }
+
+
+

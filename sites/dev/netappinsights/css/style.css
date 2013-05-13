@@ -255,3 +255,35 @@ audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 .contentAccordion .active .contentAccordionItemTitle { color: #444444; background-color: white; border-bottom: 1px solid #ccc; border-left: 5px solid #0e68c9; /*border-top: 1px solid #ccc;*/ cursor: default; }
 .contentAccordion .active .contentAccordionItemToggleIcon { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAADCAIAAADOaLIhAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1MkM5MDRFQzJCMjA2ODExODA4M0Q2NDc3ODYzMzIxRCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEM0ZDRkZEM0FGNDExMUUyQTFFNkE5N0M3MTUwNUI2OCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEM0ZDRkZEMkFGNDExMUUyQTFFNkE5N0M3MTUwNUI2OCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QURGOTI4QTAxMjIwNjgxMTgyMkFCQkQ3RkEzODMxREUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NTJDOTA0RUMyQjIwNjgxMTgwODNENjQ3Nzg2MzMyMUQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6qKr8uAAAAF0lEQVR42mLkyzjJgAMwMeAG+OQAAgwAZsMBRfFyyE4AAAAASUVORK5CYII="); display: block; height: 3px; width: 9px; position: absolute; top: 16px; right: 11px; }
 .contentAccordion.allCollapsible .active .contentAccordionItemTitle { cursor: pointer; }
+
+/* Navigation */
+#whatIsThis { margin-left: 230px; position: absolute; }
+
+#whatIsThis li { float: left; display: block; height: 25px; position: relative; z-index: 500; }
+
+#whatIsThis li a { display: block; font-size: 11px; font-weight: 300; height: 25px; padding: 0 15px; text-decoration: none; color: #fff; }
+
+#whatIsThis li a:hover { color: #444; background: #fff; padding: 0 15px; }
+
+#whatIsThis a.selected { color: #444; background: #fff; }
+
+#whatIsThis ul { box-shadow: 0px 10px 15px 0px #333; position: absolute; left: 0; display: none; margin: 0; padding: 0; list-style: none; width: auto; background: #fff; top: 25px; }
+
+#whatIsThis li:hover a { /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */ background: white url("../images/whatsThisArrowHover.png") no-repeat 5px 10px; color: #444; text-decoration: none; }
+
+/*
+#whatIsThis ul li {
+	margin:0;
+	padding:0;
+	width:100%; }*/
+#whatIsThis li ul li { font-size: 14px; display: block; color: #444; height: auto; text-decoration: none; width: 440px; margin: 0 2px 9px 0; padding: 20px; }
+
+#whatIsThis li ul a { background: #ebebea; padding: 10px 0 0 10px; font-size: 12pt; display: block; color: #20204e; text-decoration: none; }
+
+#whatIsThis li:hover ul h4 { color: #444; font-size: 16px; font-weight: bold; margin: 0 0 10px; }
+
+#whatIsThis li:hover ul p { color: #444; font-size: 12px; font-weight: normal; line-height: 1.5em !important; }
+
+#whatIsThis li:hover ul a { background: #0e68c8; border-radius: 3px; color: #fff !important; display: block; font-size: 12px; height: 12px; line-height: 1; color: #20204e; padding: 10px 15px; text-decoration: none; }
+
+#whatIsThis li:hover ul a:hover { background: #0b4f98; color: #fff; display: block; color: #fff; text-decoration: none; }
