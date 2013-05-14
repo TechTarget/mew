@@ -3,7 +3,10 @@
 #whatIsThis
 {
     margin-left:230px;
+    *margin-left: 0;
     position: absolute;
+    zoom:1;
+    z-index: 9999;
 }
 
 #whatIsThis li {
@@ -12,20 +15,28 @@
   height:25px;
   position:relative;
   z-index:500;
+
   }
   
 
 #whatIsThis li a {
+  border-top: 0;
+  border: 1px solid #999;
+  border-bottom: 0;
   display:block;
   font-size:11px;
   font-weight:300;
-  height:25px;
+  height:24px;
   padding: 0 15px;
   text-decoration:none;
   color:#fff;
+  position: relative;
+  z-index: 501;
   }    
 
 #whatIsThis li a:hover {
+  border: 1px solid #999;
+  border-bottom: 1px solid #fff;
   color:#444;
   background: #fff;
   padding: 0 15px;
@@ -38,6 +49,7 @@
 
 #whatIsThis ul {
   box-shadow: 0px 10px 15px 0px #333;
+  border:1px solid #ccc;
   position:absolute;
   left:0;
   display:none;
@@ -46,7 +58,7 @@
   list-style:none;
   width:auto;
   background:#fff;
-  top:25px;
+  top:24px;
   }
   
   #whatIsThis li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
@@ -64,7 +76,6 @@
 
 #whatIsThis li ul li 
 {
-	font-size:14px;
       display:block;  
 	color:#444;
       height: auto;
@@ -72,20 +83,16 @@
 	width:440px;
 	margin:0 2px 9px 0;
 	padding:20px;
+
+      h4{font-size: 16px;}
+
+      p{font-size: 12px;line-height: 1.5em;}
   }
 
   
 
 
-#whatIsThis li ul a {
-	background:#ebebea;
-	padding:10px 0 0 10px;
-	font-size:12pt;
-    display:block;  
-	color:#20204e;
-	text-decoration:none;
 
-  }
 
   #whatIsThis li:hover ul h4{
     color: #444;
@@ -103,14 +110,15 @@
 
 #whatIsThis li:hover ul a {
 	background:#0e68c8;
-  border-radius: 3px;
-    color: #fff !important;
+      border-radius: 3px;
+      border:0 !important;
+      color: #fff !important;
       display:block;  
       font-size:12px; 
       height: 12px;
       line-height: 1;
 	color:#20204e;
-	padding:10px 15px;
+	padding:8px 15px;
 	text-decoration:none;
   }
 

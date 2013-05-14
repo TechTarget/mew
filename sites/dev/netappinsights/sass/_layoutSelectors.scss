@@ -3,7 +3,7 @@ $linkColor: #0e68c8;
 @import "compass/css3";
 
 /* layout selectors */
-#micrositeContainer{background:url(../images/articleBkg.png) repeat-y 0 0;border-bottom:1px solid #b1b1b1;overflow: hidden;position: relative;}
+#micrositeContainer{background:url(../images/articleBkg.png) repeat-y 0 0;border-bottom:1px solid #b1b1b1;overflow: hidden;position: relative;*z-index: 0}
 
 #micrositeContainerTopic{background:url(../images/topicBkg.png) repeat-y 0 0;overflow: hidden;}
 
