@@ -1,7 +1,7 @@
 @import "compass/css3/transition";
 
 // accordion defaults
-$border-color: #ccc;
+$border-color: #d1d1d1;
 $title-color-on: #444;
 $title-color-off: #444;
 $title-bgColor-on: #fff;
@@ -11,18 +11,16 @@ $open-image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAADCAIAAADOaLIh
 $close-image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAICAIAAACgWpLfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1MkM5MDRFQzJCMjA2ODExODA4M0Q2NDc3ODYzMzIxRCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpCQjQ4Nzg3RUFDMzExMUUyQkYwRkE1MTg5MzIwQjk0MyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpCQjQ4Nzg3REFDMzExMUUyQkYwRkE1MTg5MzIwQjk0MyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDM4MDExNzQwNzIwNjgxMTgwODNBNTYxQzRGQUFGQkMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NTJDOTA0RUMyQjIwNjgxMTgwODNENjQ3Nzg2MzMyMUQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6J4UnxAAAAh0lEQVR42lyOMQ5FERBF3+TpJUq13iokliyh11sBjQUoEf68TCLybyHcczID9t6llDGGUuq5ckqWcw4hoIftkRB776l8jTGtNbyhyjkXQhBea2HZewcc5ZyrteIbALTWKSXCUkprLeCoOeeRTggzxoCW/UkHf4PJuKUbf9lX8E8xRjzv8ifAANqKg4Nv8NIyAAAAAElFTkSuQmCC";
 
 .contentAccordion {
-  /*border: 1px solid $border-color;*/
+  border: 1px solid $border-color;
   margin: 0;
 
   .contentAccordionItem {
     /*margin: 0 0 1px;*/
-    border:1px solid #d1d1d1;
-    border-top: none;
+    border-bottom:1px solid #d1d1d1;
 
-    &:first-child{
-        border-top:1px solid #d1d1d1;
-      }
+
     &:last-child {
+      border-bottom:none;
       margin: 0;
     }
 

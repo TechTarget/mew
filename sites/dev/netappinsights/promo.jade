@@ -1,0 +1,38 @@
+include data
+!!! 5
+html(lang='en', dir='ltr')
+  head
+    meta(name='pageStart', content='1359057078694')
+    title Embedded Version of #{site.name}
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    link#stylesheetGlobal(rel='stylesheet', type='text/css', href='http://media.ttgtmedia.com/rms/ux/css/global.css', media='screen')
+    link#stylesheetSiteSpecific(rel='stylesheet', type='text/css', href='http://media.ttgtmedia.com/rms/ux/css/searchsqlserver_new.css', media='screen')
+    link(rel='stylesheet', href='css/promo.css', type='text/css', media='screen')
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+    script(src='javascript/script.js')
+    // this needs to be here in order to avoid uncaught reference errors in console
+    script(type='text/javascript')
+      var microsite = '#{site.name}';
+      var SITE_v5sid = '';
+      var SITE_name = '';
+      var ENV_clicktrackHost = 'http://clicktrack.techtarget.com';
+      var ENV_mediaHost = 'http://cdn.ttgtmedia.com/rms/ux';
+      var zone = 'HOME';
+      var taxNameWithOutSpecialChars='Home';
+      var SITE_hostName = 'techtarget';
+  body(id="#{site.name}")
+.sponsoredArticles
+  h3 Sponsored Articles
+  ul
+    li
+      a(href="#") NetApp Flash Pool and Flash Cache: A Deep Dive
+      p sponsored by NetApp
+    li
+      a(href="#") Top Storage Trends for 2013
+      p sponsored by NetApp
+    li
+      a(href="#") NetApp Brings Private Storage to Amazon Web Services
+      p sponsored by NetApp
+    li
+      a(href="#") Three Options for Optimizing Flash in Your Storage Infrastructure
+      p sponsored by NetApp

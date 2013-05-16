@@ -22,14 +22,17 @@ default:
 
 	@echo "* compiling jade templates..."
 	@jade -P article.jade
+	@jade -P article2.jade
 	@jade -P embedded.jade
 	@jade -P topic.jade
 	@jade -P layoutEmbedded.jade
 	@jade -P three_options.jade
+	@jade -P promo.jade
 	
 
 	@echo "* compiling sass..."
 	@sass --scss --compass --style compact sass/style.scss css/style.css
+	@sass --scss --compass --style compact sass/promo.scss css/promo.css
 
 	# @echo "* linting..."
 	# @jshint ${SCRIPT_NAME}.js --show-non-errors

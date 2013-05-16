@@ -81,6 +81,7 @@ audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 .rightColumn a { color: #0e68c8 !important; }
 .rightColumn .upcomingEvents { background: -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(0%, #dfdfdf), color-stop(2%, #ffffff), color-stop(98%, #ffffff), color-stop(100%, #dfdfdf)); background: -webkit-linear-gradient(right, #dfdfdf 0%, #ffffff 2%, #ffffff 98%, #dfdfdf 100%); background: -moz-linear-gradient(right, #dfdfdf 0%, #ffffff 2%, #ffffff 98%, #dfdfdf 100%); background: -o-linear-gradient(right, #dfdfdf 0%, #ffffff 2%, #ffffff 98%, #dfdfdf 100%); background: linear-gradient(right, #dfdfdf 0%, #ffffff 2%, #ffffff 98%, #dfdfdf 100%); border-bottom: 2px solid #84bd00; border-top: 2px solid #84bd00; *border-left: 1px solid #dfdfdf; *border-right: 1px solid #dfdfdf; float: right; margin: 0 15px 15px; padding: 10px 15px; width: 270px; }
 .rightColumn .upcomingEvents h2 { font-size: 14px; margin: 0 !important; line-height: 1; }
+.rightColumn .upcomingEvents h2 img { margin-top: -2px; }
 .rightColumn .upcomingEvents p { margin: 0 !important; }
 .rightColumn .upcomingEvents ul { list-style-type: none; margin: 0 0 5px !important; padding: 0 !important; }
 .rightColumn .upcomingEvents ul li { background: url("../images/rightArrow.png") no-repeat 240px 30px; border-bottom: 1px solid #d1d1d1; padding: 5px 0; }
@@ -238,10 +239,9 @@ audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 
 .rightColumn .socialShare-addThis a:first-child { margin: 0; }
 
-.contentAccordion { /*border: 1px solid $border-color;*/ margin: 0; }
-.contentAccordion .contentAccordionItem { /*margin: 0 0 1px;*/ border: 1px solid #d1d1d1; border-top: none; }
-.contentAccordion .contentAccordionItem:first-child { border-top: 1px solid #d1d1d1; }
-.contentAccordion .contentAccordionItem:last-child { margin: 0; }
+.contentAccordion { border: 1px solid #d1d1d1; margin: 0; }
+.contentAccordion .contentAccordionItem { /*margin: 0 0 1px;*/ border-bottom: 1px solid #d1d1d1; }
+.contentAccordion .contentAccordionItem:last-child { border-bottom: none; margin: 0; }
 .contentAccordion .contentAccordionItem .contentAccordionItemTitle { background-color: white; border-left: 5px solid #999; color: #444444; font-size: 12px; padding: 10px 10px; cursor: pointer; position: relative; }
 .contentAccordion .contentAccordionItem .contentAccordionItemTitle:hover { border-left: 5px solid #0e68c9; }
 .contentAccordion .contentAccordionItem .contentAccordionItemToggleIcon { background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAICAIAAACgWpLfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1MkM5MDRFQzJCMjA2ODExODA4M0Q2NDc3ODYzMzIxRCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpCQjQ4Nzg3RUFDMzExMUUyQkYwRkE1MTg5MzIwQjk0MyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpCQjQ4Nzg3REFDMzExMUUyQkYwRkE1MTg5MzIwQjk0MyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDM4MDExNzQwNzIwNjgxMTgwODNBNTYxQzRGQUFGQkMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NTJDOTA0RUMyQjIwNjgxMTgwODNENjQ3Nzg2MzMyMUQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6J4UnxAAAAh0lEQVR42lyOMQ5FERBF3+TpJUq13iokliyh11sBjQUoEf68TCLybyHcczID9t6llDGGUuq5ckqWcw4hoIftkRB776l8jTGtNbyhyjkXQhBea2HZewcc5ZyrteIbALTWKSXCUkprLeCoOeeRTggzxoCW/UkHf4PJuKUbf9lX8E8xRjzv8ifAANqKg4Nv8NIyAAAAAElFTkSuQmCC") no-repeat 0 0; display: block; height: 8px; width: 11px; position: absolute; top: 13px; right: 10px; }

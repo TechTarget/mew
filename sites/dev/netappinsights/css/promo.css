@@ -1,0 +1,10 @@
+body { background: #fff; }
+body .sponsoredArticles { margin: 30px auto 0; }
+
+.sponsoredArticles { background: #fafafa; border: 1px dotted #646464; font-family: "Helvetica Neue", arial, san-serif; padding: 12px 10px; width: 259px; }
+.sponsoredArticles h3 { color: #9b9b9b; font-size: 12px; font-weight: bold; margin: 0 0 15px; text-transform: uppercase; }
+.sponsoredArticles ul { margin: 0 0 0 18px !important; padding: 0 !important; }
+.sponsoredArticles ul li { color: #9b9b9b; list-style-type: square; line-height: 0 !important; }
+.sponsoredArticles ul li a { color: #2d52ad !important; font-size: 13px; line-height: 1.4em !important; text-decoration: none; }
+.sponsoredArticles ul li a:hover { text-decoration: underline; }
+.sponsoredArticles ul li p { color: #999; font-size: 11px; margin: 0 0 10px !important; }
