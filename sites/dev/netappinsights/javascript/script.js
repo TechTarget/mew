@@ -82,7 +82,9 @@ $(function(){
 var category = $('.leftColumnNav h4').text();
 
 $(".contentAccordionItemTitle").each(function() {
-  if ($(this).text() === category) { $(this).parent().hide() }
+  if ($(this).text() === category) { 
+    $(this).parent().hide() 
+  }
 })
 
 
