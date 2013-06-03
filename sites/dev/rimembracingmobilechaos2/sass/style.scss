@@ -1,7 +1,4 @@
-/* last update: 2013-02-04 */
-
-/* 920 x 360 */
-
+/* last update: 2013-05-03 */
 @font-face {
   font-family: 'TradeGothic';
   src: url('http://media.techtarget.com/HP/fonts/tradegothicnextw01.eot');
@@ -19,6 +16,7 @@
   font-style: normal;
 }
 
+@import "mixins";
 
 /* base */
 
@@ -751,117 +749,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Animated carousel component */
-#sequence {
-  position: relative;
-  margin: 40px 0 20px;
-  border: 1px solid #252525;
-  overflow: hidden;
-  *position: relative;
-
-  ul {
-    list-style-type: none;
-    margin: 0 !important;
-    padding: 0 !important;
-    white-space: nowrap;
-    position: relative;
-    left: 0;
-    overflow: hidden;
-    width: 10000px;
-  }
-
-  li {
-    display: block;
-    float: left;
-    padding: 0 0 0 20px;
-    position: relative;
-    white-space: normal;
-    position: relative;
-    width: 920px;
-    height: 360px;
-  }
-}
-
-.filmstripThumbnailHeader {
-  font-size: 22px;
-  font-weight: bold;
-  z-index: 1;
-  text-transform: uppercase;
-  font-family: 'SlatePro', Arial, sans-serif;
-  letter-spacing: 5px;
-  color: #fff;
-  margin: 120px 0 10px;
-}
-
-.filmstripThumbnail {
-  width: auto;
-  z-index: 0;
-  img {
-    z-index: 0;
-    margin-bottom: 10px;
-    height: 360px;
-    width: auto;
-    margin: 0;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
-}
-
-.filmstripThumbnailText {
-  font-size: 13px;
-  line-height: 1.6;
-  z-index: 1;
-  p {
-    margin: 0 0 5px !important;
-  }
-  .readMore {
-    color: #3580d1;
-    font-size: 14px;
-    margin: 10px 0;
-    display: inline-block;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    background: transparent url(../images/buttonLearnMore.png) no-repeat 0 0;
-    height: 37px;
-    width: 116px;
-  }
-}
-
-.filmstripControls {
-  clear: both;
-  margin: 10px 0;
-  text-align: center;
-  a {
-    outline: none;
-  }
-}
-
-.filmstripPagination {
-  text-align: center;
-  padding: 10px 0;
-  *position: relative;
-  *zoom: 1;
-  a {
-    display: inline-block;
-    margin: 0 6px;
-    height: 11px;
-    width: 11px;
-    background: transparent url(../images/slideControlPagination.png) no-repeat -25px 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-indent: 100%;
-    *text-indent: 0;
-    *font-size: 0;
-    &.active {
-      background-position: 0 0;
-      cursor: default;
-    }
-    &:focus {
-      background-color: transparent;
-    }
-  }
-}
+@import "sequence";
 
 #micrositeContentColumnFull {
   position: relative;
