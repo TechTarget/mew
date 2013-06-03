@@ -1,4 +1,5 @@
 /* last update: 2013-02-04 */
+/* 920 x 360 */
 @font-face {
   font-family: 'TradeGothic';
   src: url("http://media.techtarget.com/HP/fonts/tradegothicnextw01.eot");
@@ -584,21 +585,14 @@ h1, h2, h3, h4, h5, h6 {
     /* TODO: Convert to ems */
     display: block; }
 
-/* carousel component */
-/*
-widget's parent container width must be calculated like this:
-(width of .filmstripPrevious) + (width of .filmstripNext) + N(width of .filmstripWindow > ul > li)
-where N = the number of items on display at a time
-*/
-.filmstrip {
+/* Animated carousel component */
+#sequence {
   position: relative;
-  margin: 40px 0 20px; }
-
-/*.filmstrip.filmstripNavigationHide { padding: 0; }*/
-.filmstripWindow {
+  margin: 40px 0 20px;
+  border: 1px solid #252525;
   overflow: hidden;
   *position: relative; }
-  .filmstripWindow > ul {
+  #sequence ul {
     list-style-type: none;
     margin: 0 !important;
     padding: 0 !important;
@@ -606,40 +600,57 @@ where N = the number of items on display at a time
     position: relative;
     left: 0;
     overflow: hidden;
-    width: 10000px;
-    -webkit-transition: left 0.5s;
-    -moz-transition: left 0.5s;
-    -ms-transition: left 0.5s;
-    -o-transition: left 0.5s;
-    transition: left 0.5s; }
-    .filmstripWindow > ul > li {
-      display: block;
-      float: left;
-      padding: 0;
-      position: relative;
-      white-space: normal; }
+    width: 10000px; }
+  #sequence li {
+    display: block;
+    float: left;
+    padding: 0 0 0 20px;
+    position: relative;
+    white-space: normal;
+    position: relative;
+    width: 920px;
+    height: 360px; }
 
 .filmstripThumbnailHeader {
-  color: #3580d1;
-  font-size: 15px;
+  font-size: 22px;
   font-weight: bold;
-  margin: 0 0 5px; }
+  z-index: 1;
+  text-transform: uppercase;
+  font-family: "SlatePro", Arial, sans-serif;
+  letter-spacing: 5px;
+  color: #fff;
+  margin: 120px 0 10px; }
 
 .filmstripThumbnail {
-  width: auto; }
+  width: auto;
+  z-index: 0; }
   .filmstripThumbnail img {
-    height: 80px;
-    width: 270px;
-    margin-bottom: 10px; }
+    z-index: 0;
+    margin-bottom: 10px;
+    height: 360px;
+    width: auto;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0; }
 
 .filmstripThumbnailText {
-  font-size: 12px;
-  line-height: 1.6; }
+  font-size: 13px;
+  line-height: 1.6;
+  z-index: 1; }
   .filmstripThumbnailText p {
     margin: 0 0 5px !important; }
   .filmstripThumbnailText .readMore {
     color: #3580d1;
-    font-size: 14px; }
+    font-size: 14px;
+    margin: 10px 0;
+    display: inline-block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: transparent url(../images/buttonLearnMore.png) no-repeat 0 0;
+    height: 37px;
+    width: 116px; }
 
 .filmstripControls {
   clear: both;
@@ -647,51 +658,6 @@ where N = the number of items on display at a time
   text-align: center; }
   .filmstripControls a {
     outline: none; }
-
-.filmstripPrevious, .filmstripNext {
-  display: inline-block;
-  height: 18px;
-  width: 11px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-indent: 100%;
-  *text-indent: 0;
-  *font-size: 0; }
-
-.filmstripPrevious {
-  background: transparent url(../images/slideControlPreviousOn.png) no-repeat 0 0; }
-
-.filmstripNext {
-  background: transparent url(../images/slideControlNextOn.png) no-repeat 0 0; }
-
-.filmstripPrevious.disabled {
-  background-image: url(../images/slideControlPreviousOff.png);
-  cursor: default; }
-
-.filmstripNext.disabled {
-  background-image: url(../images/slideControlNextOff.png);
-  cursor: default; }
-
-.filmstripPrevious:focus, .filmstripNext:focus {
-  background-color: transparent; }
-
-.filmstripNavigationOutside.filmstrip {
-  padding: 0 40px; }
-.filmstripNavigationOutside .filmstripPrevious, .filmstripNavigationOutside .filmstripNext {
-  width: 40px;
-  position: absolute;
-  top: 0;
-  height: 220px;
-  background-position: 50% 50%; }
-.filmstripNavigationOutside .filmstripPrevious {
-  left: 0; }
-.filmstripNavigationOutside .filmstripNext {
-  right: 0; }
-
-.filmstripNavigationInline .filmstripNext {
-  margin: 0 0 0 20px; }
-.filmstripNavigationInline .filmstripPrevious {
-  margin: 0 20px 0 0; }
 
 .filmstripPagination {
   text-align: center;
@@ -714,48 +680,6 @@ where N = the number of items on display at a time
       cursor: default; }
     .filmstripPagination a:focus {
       background-color: transparent; }
-
-/* extends */
-.filmstripWindow {
-  border: 1px solid #252525; }
-  .filmstripWindow > ul > li {
-    position: relative;
-    width: 920px;
-    height: 360px;
-    padding-left: 20px; }
-
-.filmstripThumbnailHeader {
-  z-index: 1;
-  font-size: 22px;
-  text-transform: uppercase;
-  font-family: "SlatePro", Arial, sans-serif;
-  letter-spacing: 5px;
-  color: #fff;
-  margin: 120px 0 10px; }
-
-.filmstripThumbnailText {
-  z-index: 1;
-  font-size: 13px; }
-  .filmstripThumbnailText .readMore {
-    margin: 10px 0;
-    display: inline-block;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    background: transparent url(../images/buttonLearnMore.png) no-repeat 0 0;
-    height: 37px;
-    width: 116px; }
-
-.filmstripThumbnail {
-  z-index: 0; }
-  .filmstripThumbnail img {
-    z-index: 0;
-    height: 360px;
-    width: auto;
-    margin: 0;
-    position: absolute;
-    right: 0;
-    bottom: 0; }
 
 #micrositeContentColumnFull {
   position: relative; }
