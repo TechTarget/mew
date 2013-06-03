@@ -4,7 +4,7 @@
       'almond': '../_global/javascript/almond',
       'jquery': '../_global/javascript/jquery',
       'addThisShare': '../_global/javascript/addThisShare',
-      'filmstripCarousel': '../_global/javascript/filmstripCarousel',
+      'sequence': '../_global/javascript/sequence',
       'contentMatrix': '../_global/javascript/contentMatrix',
       'featuredVideo': '../_global/javascript/featuredVideo'
     },
