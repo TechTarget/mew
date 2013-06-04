@@ -80,7 +80,7 @@ $sequencePreloader: "#sequence-preloader";
   z-index: 999999;
 
   img {
-    background: #ff9933;
+    background: #999;
     @include prefixed(border-radius, 6px);
     display: inline-block;
     height: 12px;
