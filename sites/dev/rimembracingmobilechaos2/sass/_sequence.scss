@@ -1,70 +1,63 @@
+//Selector Variables
+$landPoint: ".animate-in";
+$exitPoint: ".animate-out";
+$sequencePreloader: "#sequence-preloader";
+
+@include prefixedKeyframe("preload") { /* preloader icons */
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 #sequence {
+  height: 360px;
+  width: 920px;
   position: relative;
   margin: 40px 0 20px;
   border: 1px solid #252525;
   overflow: hidden;
   *position: relative;
-
-  ul {
+  -webkit-backface-visibility: hidden; /* prevent graphical glitches in WebKit browsers when using transitions */
+  
+  ul, li{
     list-style-type: none;
     margin: 0 !important;
     padding: 0 !important;
-    white-space: nowrap;
-    position: relative;
-    left: 0;
-    overflow: hidden;
-    width: 10000px;
   }
 
-  li {
-    display: block;
-    float: left;
-    padding: 0 0 0 20px;
-    position: relative;
-    white-space: normal;
-    position: relative;
-    width: 920px;
-    height: 360px;
-  }
-}
+  li{background: url(../images/bizMoving_bg.png) right bottom no-repeat;}
 
-.filmstripThumbnailHeader {
+  /*when in fallback mode (for browsers that don't support transitions) hide anything outside of the Sequence container*/
+  &.sequence-fallback {
+      overflow: hidden;
+  }
+
+  h2[class$='__header']{
   font-size: 22px;
   font-weight: bold;
+  line-height: 1.3em;
   z-index: 1;
   text-transform: uppercase;
   font-family: 'SlatePro', Arial, sans-serif;
   letter-spacing: 5px;
   color: #fff;
-  margin: 120px 0 10px;
 }
 
-.filmstripThumbnail {
-  width: auto;
-  z-index: 0;
-  img {
-    z-index: 0;
-    margin-bottom: 10px;
-    height: 360px;
-    width: auto;
-    margin: 0;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+  p[class$='__tagline']{
+    font-size: 13px;
+    line-height: 1.6;
+    z-index: 1;
   }
-}
 
-.filmstripThumbnailText {
-  font-size: 13px;
-  line-height: 1.6;
-  z-index: 1;
-  p {
-    margin: 0 0 5px !important;
-  }
-  .readMore {
+  a[class$='__ctaButton']{
     color: #3580d1;
     font-size: 14px;
-    margin: 10px 0;
     display: inline-block;
     text-indent: 100%;
     white-space: nowrap;
@@ -73,39 +66,253 @@
     height: 37px;
     width: 116px;
   }
+
+  [class$='__header'], 
+  [class$='__tagline'],
+  [class$='__ctaButton'],
+  [class~='absimg']
+  { position: absolute; }
 }
 
-.filmstripControls {
-  clear: both;
-  margin: 10px 0;
-  text-align: center;
-  a {
-    outline: none;
-  }
-}
+/* Preloader */
+#{$sequencePreloader} {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 999999;
 
-.filmstripPagination {
-  text-align: center;
-  padding: 10px 0;
-  *position: relative;
-  *zoom: 1;
-  a {
+  img {
+    background: #ff9933;
+    @include prefixed(border-radius, 6px);
     display: inline-block;
-    margin: 0 6px;
-    height: 11px;
-    width: 11px;
-    background: transparent url(../images/slideControlPagination.png) no-repeat -25px 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-indent: 100%;
-    *text-indent: 0;
-    *font-size: 0;
-    &.active {
-      background-position: 0 0;
-      cursor: default;
-    }
-    &:focus {
-      background-color: transparent;
-    }
+    height: 12px;
+    opacity: 0;
+    position: relative;
+    top: -50%;
+    width: 12px;
+    @include prefixed(animation, preload 1s infinite);
   }
+
+  .preloading {
+    height: 12px;
+    margin: 0 auto;
+    top: 50%;
+    position: relative;
+    width: 48px;
+  }
+
+  img:nth-child(2) {
+    @include prefixed(animation-delay, .15s);
+  }
+
+  img:nth-child(3) {
+    @include prefixed(animation-delay, .3s);
+  }
+
+  .preloading-complete {
+    opacity: 0;
+    visibility: hidden;
+    @include prefixed(transition-duration, 1s);
+  }
+}
+/* !Preloader */
+
+/* Slide 1 */
+.bizMoving__header{
+  left: -125px;
+  top: 125px;
+  opacity: 0;
+}
+
+#{$landPoint} .bizMoving__header{
+  left: 20px;
+  opacity: 1;
+  @include prefixed(transition-duration, .75s);
+  @include prefixed(transition-delay, .25s);
+}
+
+#{$exitPoint} .bizMoving__header{
+  left: 20px;
+  opacity: 0;
+  @include prefixed(transition-duration, .75s);
+  @include prefixed(transition-delay, .25s);
+}
+
+.bizMoving__tagline{
+  opacity: 0;
+  top: 175px;
+  left: -400px;
+}
+
+#{$landPoint} .bizMoving__tagline{
+  left: 20px;
+  opacity: 1;
+  @include prefixed(transition-duration, 1s);
+  @include prefixed(transition-delay, .25s);
+}
+
+#{$exitPoint} .bizMoving__tagline{
+  left: 20px;
+  opacity: 0;
+  @include prefixed(transition-duration, 1s);
+  @include prefixed(transition-delay, .25s);
+
+}
+
+.bizMoving__ctaButton{
+  opacity: 0;
+  top: 225px;
+  left: -120px;
+}
+
+#{$landPoint} .bizMoving__ctaButton{
+  left: 20px;
+  opacity: 1;
+  @include prefixed(transition-duration, 1s);
+  @include prefixed(transition-delay, .25s);
+
+}
+
+#{$exitPoint} .bizMoving__ctaButton{
+  left: 20px;
+  opacity: 0;
+  @include prefixed(transition-duration, 1s);
+  @include prefixed(transition-delay, .25s);
+
+}
+
+.bizMoving__phone1{
+  top: 400px;
+  right: 0;
+  opacity: 0;
+}
+
+#{$landPoint} .bizMoving__phone1{
+  top: 30px;
+  opacity: 1;
+  @include prefixed(transition-duration, 1s);
+  @include prefixed(transition-delay, .5s);
+
+}
+
+#{$exitPoint} .bizMoving__phone1{
+  top: 30px;
+  opacity: 0;
+  @include prefixed(transition-duration, .75s);
+  @include prefixed(transition-delay, .25s);
+
+}
+
+.bizMoving__phone2{
+  top: 400px;
+  right: 115px;
+  opacity: 0;
+}
+
+#{$landPoint} .bizMoving__phone2{
+  top: 50px;
+  opacity: 1;
+  @include prefixed(transition-duration, 1s);
+  @include prefixed(transition-delay, .25s);
+
+}
+
+#{$exitPoint} .bizMoving__phone2{
+  top: 50px;
+  opacity: 0;
+  @include prefixed(transition-duration, .75s);
+  @include prefixed(transition-delay, .25s);
+
+}
+
+/* Slide 2 */
+.controlChaos{
+  //background: url(https://dl.dropboxusercontent.com/u/66871184/bbry/slide3.jpg);
+  //background: url(../images/bizMoving_bg.png) right bottom no-repeat;
+}
+
+.controlChaos__header{
+  left: -125px;
+  top: 125px;
+  opacity: 0;
+}
+
+#{$landPoint} .controlChaos__header{
+  left: 20px;
+  opacity: 1;
+  @include prefixed(transition-duration, .75s);
+  @include prefixed(transition-delay, .25s);
+
+}
+
+#{$exitPoint} .controlChaos__header{
+  left: 20px;
+  opacity: 0;
+  @include prefixed(transition-duration, .75s);
+  @include prefixed(transition-delay, .25s);
+
+}
+
+.controlChaos__tagline{
+  opacity: 0;
+  top: 150px;
+  left: -400px;
+}
+
+#{$landPoint} .controlChaos__tagline{
+  left: 20px;
+  opacity: 1;
+  @include prefixed(transition-duration, 1s);
+  @include prefixed(transition-delay, .25s);
+
+}
+
+#{$exitPoint} .controlChaos__tagline{
+  left: 20px;
+  opacity: 0;
+  @include prefixed(transition-duration, 1s);
+  @include prefixed(transition-delay, .25s);
+
+}
+
+.controlChaos__ctaButton{
+  opacity: 0;
+  top: 195px;
+  left: -120px;
+}
+
+#{$landPoint} .controlChaos__ctaButton{
+  left: 20px;
+  opacity: 1;
+  @include prefixed(transition-duration, 1s);
+  @include prefixed(transition-delay, .25s);
+
+}
+
+#{$exitPoint} .controlChaos__ctaButton{
+  left: 20px;
+  opacity: 0;
+  @include prefixed(transition-duration, 1s);
+  @include prefixed(transition-delay, .25s);
+
+}
+
+.controlChaos__madden{
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+}
+
+#{$landPoint} .controlChaos__madden{
+  opacity: 1;
+  @include prefixed(transition-duration, 1.25s);
+  @include prefixed(transition-delay, .15s);
+
+}
+
+#{$exitPoint} .controlChaos__madden{
+  opacity: 0;
+  @include prefixed(transition-duration, 1.25s);
+  @include prefixed(transition-delay, .15s);
+
 }

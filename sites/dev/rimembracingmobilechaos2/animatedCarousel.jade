@@ -1,29 +1,21 @@
 #sequence
-  ul.listTypeFilmstrip
-    li
-      .filmstripThumbnailHeader
+  ul
+    li.bizMoving
+      //Commented out a(href='/Mobile-Chaos-Solutions')
+      h2.bizMoving__header
         | Blackberry 10: built to
         br
         | keep business moving
-      .filmstripThumbnail
-        img(src='http://cdn.ttgtmedia.com/microsites/rimembracingmobilechaos2/images/slide1Bg.jpg', alt='')
-      .filmstripThumbnailText
-        p The journey beings here. Learn what to expect, today and tomorrow.
-        a.readMore(href='replaceMe') Learn More>
-    li
-      .filmstripThumbnailHeader Meet Blackberry 10
-      .filmstripThumbnail
-        img(src='http://cdn.ttgtmedia.com/microsites/rimembracingmobilechaos2/images/slide2Bg.jpg', alt='')
-      .filmstripThumbnailText
-        p
-          | Committed to the enterprise. Setting the standard in mobile
-          br
-          | security. Unparalleled enterprise mobility management.
-        a.readMore(href='replaceMe') Learn More>
-    li
-      .filmstripThumbnailHeader Control Mobile Chaos
-      .filmstripThumbnail
-        img(src='http://cdn.ttgtmedia.com/microsites/rimembracingmobilechaos2/images/slide3Bg.jpg', alt='')
-      .filmstripThumbnailText
-        p Our award-winning series of video shorts shows you the way.
-        a.readMore(href='replaceMe') Learn More>
+      p.bizMoving__tagline
+        | The journeys beings here. Learn what to expect, today and tomorrow.
+      a.readMore(href='replaceMe', class="bizMoving__ctaButton") Learn More>
+      img(src='images/bizMoving_phone2.png', alt='', class="bizMoving__phone2 absimg")
+      img(src='images/bizMoving_phone1.png', alt='', class="bizMoving__phone1 absimg")
+    li.controlChaos
+      //Commented Out a(href='/Mobile-Chaos-Challenges')
+      h2.controlChaos__header
+        | Control Mobile Chaos
+      p.controlChaos__tagline
+        | Our award-winning series of video shorts shows you the way.
+      a.readMore(href='replaceMe', class="controlChaos__ctaButton") Learn More>
+      img(src='http://cdn.ttgtmedia.com/microsites/rimembracingmobilechaos2/images/slide3Bg.jpg', alt='', class="controlChaos__madden absimg")
