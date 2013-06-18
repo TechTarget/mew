@@ -33,7 +33,7 @@ $(document).ready(function ($) {
   });
 
   /* Animated Carousel */
-  var options = {
+  var seqoptions = {
         autoPlay: true,
         autoPlayDelay: 6000,
         pauseOnHover: true,
@@ -53,7 +53,7 @@ $(document).ready(function ($) {
         }
     };
 
-    var sequence = $("#sequence").sequence(options).data("sequence");
+    var sequence = $("#sequence").sequence(seqoptions).data("sequence");
 
     sequence.afterLoaded = function() {
         $(".navi").fadeIn(100);
