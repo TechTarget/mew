@@ -1,5 +1,5 @@
 /*!
- * Content Navigation Carousel v0.5 (http://okize.github.com/)
+ * Content Navigation Carousel v0.5 (https://github.com/okize)
  * Copyright (c) 2012 | Licensed under the MIT license - http://www.opensource.org/licenses/mit-license.php
  */
 

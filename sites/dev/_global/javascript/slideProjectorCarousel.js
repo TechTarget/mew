@@ -1,5 +1,5 @@
 /*!
- * Slide Projector Carousel v1.0.1 (http://okize.github.com/)
+ * Slide Projector Carousel v1.0.1 (https://github.com/okize)
  * A jQuery plugin that displays a large 'hero image' and a navigable thumbnail list
  * Copyright (c) 2012 | Licensed under the MIT license - http://www.opensource.org/licenses/mit-license.php
  */

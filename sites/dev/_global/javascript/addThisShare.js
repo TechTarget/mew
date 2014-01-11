@@ -1,5 +1,5 @@
 /*!
-* AddThisShare v1.0.5 (http://okize.github.com/)
+* AddThisShare v1.0.5 (https://github.com/okize)
 * Copyright (c) 2013 | Licensed under the MIT license - http://www.opensource.org/licenses/mit-license.php
 */
 

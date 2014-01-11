@@ -1,5 +1,5 @@
 /*!
-* Content Tabs v1.0.2 (http://okize.github.com/)
+* Content Tabs v1.0.2 (https://github.com/okize)
 * Copyright (c) 2013 | Licensed under the MIT license - http://www.opensource.org/licenses/mit-license.php
 */
 

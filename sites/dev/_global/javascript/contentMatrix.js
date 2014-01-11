@@ -1,5 +1,5 @@
 /*!
-* contentMatrix v1.0.0 (http://okize.github.com/)
+* contentMatrix v1.0.0 (https://github.com/okize)
 * Copyright (c) 2013 | Licensed under the MIT license - http://www.opensource.org/licenses/mit-license.php
 */
 
